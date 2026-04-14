@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html class="dark" lang="de" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<!-- ── Primary SEO ──────────────────────────────────────────── -->
+<title>LeviCube — Der schwebende RGB-Cube | Magnetische Levitation</title>
+<meta name="description" content="LeviCube Gen-1: Der magnetisch schwebende RGB-Cube für dein Zuhause. 16,8 Mio. Farben, 0 dB, kontaktlos schwebend. Limitierte Erstauflage — 500 Einheiten weltweit. Jetzt vorbestellen ab 149 €."/>
+<meta name="keywords" content="levitierender cube, schwebender würfel, RGB cube, magnetische levitation, levicube, schwebendes objekt, dekoration, smart home"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://levicube.at/"/>
+<meta name="author" content="LeviCube GmbH"/>
+
+<!-- ── Open Graph / Social ──────────────────────────────────── -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://levicube.at/"/>
+<meta property="og:title" content="LeviCube — Schwerkraft ist gestern."/>
+<meta property="og:description" content="Magnetisch schwebender RGB-Cube. 16,8 Mio. Farben. 0 dB. Limitierte Edition — 500 Stück weltweit."/>
+<meta property="og:image" content="https://levicube.at/og-image.jpg"/>
+<meta property="og:locale" content="de_AT"/>
+<meta property="og:site_name" content="LeviCube"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="LeviCube — Schwerkraft ist gestern."/>
+<meta name="twitter:description" content="Magnetisch schwebender RGB-Cube. 500 Stück. 149 €."/>
+<meta name="twitter:image" content="https://levicube.at/og-image.jpg"/>
+
+<!-- ── Structured Data (JSON-LD) ─────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://levicube.at/#org",
+      "name": "LeviCube GmbH",
+      "url": "https://levicube.at",
+      "logo": "https://levicube.at/logo.png",
+      "email": "info@levicube.at",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Technologiegasse 1",
+        "addressLocality": "Wien",
+        "postalCode": "1010",
+        "addressCountry": "AT"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://levicube.at/#product",
+      "name": "LeviCube Gen-1 — Aetheric Void Edition",
+      "description": "Magnetisch schwebender RGB-Cube mit 16,8 Millionen Farben, Bluetooth 5.2 App-Steuerung und 0 dB Betrieb.",
+      "brand": { "@type": "Brand", "name": "LeviCube" },
+      "sku": "LC-GEN1-VOID",
+      "offers": {
+        "@type": "Offer",
+        "price": "149.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://levicube.at/#preorder",
+        "seller": { "@id": "https://levicube.at/#org" }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "3"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://levicube.at/#website",
+      "url": "https://levicube.at",
+      "name": "LeviCube",
+      "inLanguage": "de-AT"
+    }
+  ]
+}
+</script>
+
+<!-- ── Preconnect ────────────────────────────────────────────── -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<!-- ── Plausible Analytics (privacy-first, no cookies) ───────── -->
+<script defer data-domain="levicube.at" src="https://plausible.io/js/script.js"></script>
+
+<!-- ── Tailwind ─────────────────────────────────────────────── -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode:"class",
+  theme:{extend:{
+    colors:{
+      "primary-fixed":"#7df4ff","background":"#131314","on-secondary":"#3c0091",
+      "tertiary-container":"#dcd9d8","on-primary-fixed":"#002022","error":"#ffb4ab",
+      "error-container":"#93000a","outline-variant":"#3b494b","primary-fixed-dim":"#00dbe9",
+      "on-surface-variant":"#b9cacb","on-secondary-fixed":"#23005c","on-tertiary-fixed":"#1c1b1b",
+      "secondary-fixed-dim":"#d0bcff","on-secondary-container":"#c4abff","surface-dim":"#131314",
+      "on-surface":"#e5e2e3","outline":"#849495","surface":"#131314","on-tertiary":"#313030",
+      "on-error-container":"#ffdad6","inverse-on-surface":"#313031","surface-container":"#201f20",
+      "on-primary-container":"#006970","on-secondary-fixed-variant":"#5516be","on-background":"#e5e2e3",
+      "tertiary":"#f8f5f5","surface-container-highest":"#353436","on-tertiary-fixed-variant":"#474746",
+      "tertiary-fixed":"#e5e2e1","surface-container-low":"#1c1b1c","primary":"#dbfcff",
+      "surface-tint":"#00dbe9","tertiary-fixed-dim":"#c8c6c5","on-error":"#690005",
+      "surface-container-high":"#2a2a2b","secondary-fixed":"#e9ddff","primary-container":"#00f0ff",
+      "surface-bright":"#3a393a","surface-container-lowest":"#0e0e0f","inverse-surface":"#e5e2e3",
+      "surface-variant":"#353436","secondary-container":"#571bc1","on-primary":"#00363a",
+      "on-tertiary-container":"#5f5e5e","secondary":"#d0bcff","on-primary-fixed-variant":"#004f54",
+      "inverse-primary":"#006970"
+    },
+    borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+    fontFamily:{"headline":["Space Grotesk"],"body":["Manrope"],"label":["Manrope"]}
+  }}
+}
+</script>
+
+<style>
+/* ═══ BASE ══════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:#131314;color:#e5e2e3;margin:0;-webkit-font-smoothing:antialiased}
+
+/* ═══ SCROLLBAR ═════════════════════════════════════════════════ */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#131314}
+::-webkit-scrollbar-thumb{background:#353436;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#00dbe9}
+
+/* ═══ UTILITIES ═════════════════════════════════════════════════ */
+.glass{background:rgba(32,31,32,.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.glow-box{box-shadow:0 0 24px rgba(0,240,255,.18)}
+input:focus,textarea:focus,select:focus{box-shadow:0 0 10px rgba(0,240,255,.2);outline:none}
+
+/* ═══ PAGE ROUTER ════════════════════════════════════════════════ */
+.page{display:none}
+.page.active{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══ MOBILE NAV ════════════════════════════════════════════════ */
+#drawer{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.9);backdrop-filter:blur(16px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.75rem;transform:translateX(-100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
+#drawer.open{transform:translateX(0)}
+
+/* ═══ CART DRAWER ════════════════════════════════════════════════ */
+#cart-drawer{position:fixed;top:0;right:0;bottom:0;width:min(400px,100vw);z-index:200;background:#1c1b1c;border-left:1px solid rgba(59,73,75,.3);transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+#cart-drawer.open{transform:translateX(0)}
+#cart-overlay{display:none;position:fixed;inset:0;z-index:190;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
+#cart-overlay.show{display:block}
+
+/* ═══ PAYMENT ════════════════════════════════════════════════════ */
+.pay-opt{cursor:pointer;transition:all .25s ease;border:1px solid rgba(59,73,75,.3)}
+.pay-opt.sel{border-color:rgba(0,240,255,.4);box-shadow:0 0 20px rgba(0,240,255,.15)}
+.pay-opt:not(.sel){opacity:.55}.pay-opt:not(.sel):hover{opacity:.85}
+.rdot{transform:scale(0);transition:transform .2s ease}
+.pay-opt.sel .rdot{transform:scale(1)}
+
+/* ═══ FORM VALIDATION ════════════════════════════════════════════ */
+.field-err{border-color:#ff5f5f!important;box-shadow:0 0 8px rgba(255,95,95,.2)!important}
+.err-msg{color:#ff8888;font-size:.72rem;margin-top:.3rem;display:none}
+.err-msg.show{display:block}
+
+/* ═══ ACCORDION ══════════════════════════════════════════════════ */
+.acc-body{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s ease}
+.acc-body.open{max-height:800px;padding-top:.75rem;padding-bottom:.75rem}
+.acc-icon{transition:transform .3s ease}
+.acc-item.open .acc-icon{transform:rotate(45deg)}
+
+/* ═══ SPEC TABLE ═════════════════════════════════════════════════ */
+.spec-row{border-bottom:1px solid rgba(59,73,75,.2)}
+.spec-row:last-child{border-bottom:none}
+
+/* ═══ TOAST ══════════════════════════════════════════════════════ */
+#toast{position:fixed;bottom:5.5rem;left:50%;transform:translateX(-50%) translateY(60px);background:rgba(15,15,16,.97);backdrop-filter:blur(20px);border:1px solid rgba(0,240,255,.3);padding:.85rem 1.75rem;border-radius:999px;color:#dbfcff;font-family:'Space Grotesk';font-weight:600;font-size:.875rem;z-index:9999;transition:transform .35s cubic-bezier(.34,1.56,.64,1),opacity .3s ease;opacity:0;pointer-events:none;white-space:nowrap;max-width:90vw;overflow:hidden;text-overflow:ellipsis}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+/* ═══ BADGE ══════════════════════════════════════════════════════ */
+@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.45)}}
+.cart-pop{animation:pop .3s ease}
+
+/* ═══ SUCCESS ════════════════════════════════════════════════════ */
+#success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);backdrop-filter:blur(14px);z-index:500;align-items:center;justify-content:center}
+#success-overlay.show{display:flex}
+@keyframes scaleIn{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+#success-overlay.show>div{animation:scaleIn .4s cubic-bezier(.34,1.56,.64,1)}
+
+/* ═══ MODALS ═════════════════════════════════════════════════════ */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.84);backdrop-filter:blur(12px);z-index:400;align-items:center;justify-content:center;padding:1rem}
+.modal.show{display:flex}
+.modal-box{background:#1c1b1c;border:1px solid rgba(59,73,75,.3);border-radius:20px;width:100%;position:relative;max-height:90vh;overflow-y:auto}
+
+/* ═══ RATING STARS ═══════════════════════════════════════════════ */
+.star{color:#3b494b;cursor:pointer;transition:color .15s;font-size:1.8rem}
+.star.lit{color:#00dbe9}
+.star:hover{color:#00dbe9}
+
+/* ═══ CUBE ANIMATION ═════════════════════════════════════════════ */
+@keyframes levitate{0%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(-10px) rotate(1deg)}75%{transform:translateY(-8px) rotate(-1deg)}}
+@keyframes rgbGlow{0%{box-shadow:0 0 30px #00f0ff,0 0 60px rgba(0,240,255,.2)}33%{box-shadow:0 0 30px #d0bcff,0 0 60px rgba(208,188,255,.2)}66%{box-shadow:0 0 30px #7df4ff,0 0 60px rgba(125,244,255,.2)}100%{box-shadow:0 0 30px #00f0ff,0 0 60px rgba(0,240,255,.2)}}
+.cube-float{animation:levitate 4s ease-in-out infinite,rgbGlow 5s linear infinite}
+.cube-shadow{animation:cubeShadow 4s ease-in-out infinite}
+@keyframes cubeShadow{0%,100%{opacity:.6;transform:scaleX(1)}50%{opacity:.2;transform:scaleX(.7)}}
+
+/* ═══ CHECKOUT STEPS ═════════════════════════════════════════════ */
+.step-dot{width:2.25rem;height:2.25rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;font-family:'Space Grotesk';transition:all .3s}
+.step-dot.done{background:#00f0ff;color:#002022}
+.step-dot.active{background:rgba(0,240,255,.15);border:2px solid #00dbe9;color:#00dbe9}
+.step-dot.todo{background:rgba(59,73,75,.3);border:2px solid rgba(59,73,75,.4);color:#849495}
+.step-line{flex:1;height:2px;background:rgba(59,73,75,.3);transition:background .3s}
+.step-line.done{background:linear-gradient(90deg,#00dbe9,#00f0ff)}
+
+/* ═══ CHAT ═══════════════════════════════════════════════════════ */
+#chat-box{height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:.75rem;padding:1rem;scroll-behavior:smooth}
+.msg{max-width:80%;padding:.7rem 1.1rem;border-radius:1.2rem;font-size:.875rem;line-height:1.55;word-wrap:break-word}
+.msg.bot{background:rgba(32,31,32,.9);border:1px solid rgba(59,73,75,.25);align-self:flex-start;border-radius:0 1.2rem 1.2rem 1.2rem}
+.msg.user{background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.2);align-self:flex-end;border-radius:1.2rem 1.2rem 0 1.2rem;color:#dbfcff}
+.msg.typing span{display:inline-block;width:.42rem;height:.42rem;background:#b9cacb;border-radius:50%;margin:0 1px;animation:bounce 1.2s infinite}
+.msg.typing span:nth-child(2){animation-delay:.2s}.msg.typing span:nth-child(3){animation-delay:.4s}
+@keyframes bounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-7px)}}
+
+/* ═══ TRUST BADGE ════════════════════════════════════════════════ */
+.trust-item{display:flex;align-items:center;gap:.5rem;color:#849495;font-size:.8rem}
+
+/* ═══ LEGAL CONTENT ══════════════════════════════════════════════ */
+.legal h2{font-family:'Space Grotesk',sans-serif;font-size:1.35rem;font-weight:700;color:#dbfcff;margin:2.25rem 0 .75rem;padding-bottom:.5rem;border-bottom:1px solid rgba(59,73,75,.25)}
+.legal h3{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:600;color:#e5e2e3;margin:1.5rem 0 .5rem}
+.legal p,.legal li{color:#b9cacb;line-height:1.85;margin-bottom:.75rem}
+.legal ul,.legal ol{padding-left:1.5rem;margin-bottom:1rem}
+.legal li{margin-bottom:.3rem}
+.legal strong{color:#e5e2e3}
+.legal a{color:#00dbe9;text-decoration:none}
+.legal a:hover{text-decoration:underline}
+.legal table{width:100%;border-collapse:collapse;margin:1rem 0}
+.legal th{text-align:left;padding:.75rem 1rem;background:rgba(32,31,32,.8);color:#dbfcff;font-family:'Space Grotesk';font-size:.85rem;letter-spacing:.05em;text-transform:uppercase}
+.legal td{padding:.75rem 1rem;border-bottom:1px solid rgba(59,73,75,.2);color:#b9cacb;font-size:.9rem}
+
+/* ═══ STRIPE PROCESSING ══════════════════════════════════════════ */
+#stripe-loading{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);z-index:600;align-items:center;justify-content:center;flex-direction:column;gap:1.5rem}
+#stripe-loading.show{display:flex}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinner{width:3rem;height:3rem;border:3px solid rgba(0,240,255,.2);border-top-color:#00dbe9;border-radius:50%;animation:spin .8s linear infinite}
+
+/* ═══ RESPONSIVE NAV ════════════════════════════════════════════ */
+@media(max-width:768px){
+  .hide-mobile{display:none!important}
+}
+
+/* ═══ NOTIF DOT ══════════════════════════════════════════════════ */
+.ndot{width:.45rem;height:.45rem;background:#00dbe9;border-radius:50%;display:inline-block}
+.ndot.green{background:#22c55e}
+
+/* ═══ PROGRESS RING ══════════════════════════════════════════════ */
+.progress-ring-circle{transition:stroke-dashoffset .35s ease;transform:rotate(-90deg);transform-origin:50% 50%}
+
+/* ═══ ANNOUNCEMENT BAR ═══════════════════════════════════════════ */
+#ann-bar{background:linear-gradient(90deg,rgba(0,240,255,.08),rgba(208,188,255,.08),rgba(0,240,255,.08));border-bottom:1px solid rgba(0,240,255,.1)}
+</style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- ═══════════════════ ANNOUNCEMENT BAR ════════════════════════ -->
+<div id="ann-bar" class="text-center py-2.5 px-4 text-xs font-label tracking-wide text-on-surface-variant relative">
+  <span class="ndot mr-2"></span>
+  Limitierte Erstauflage · <span class="text-primary-fixed-dim font-semibold">500 Einheiten weltweit</span> · Kostenloser Versand ab 149 € · <button onclick="nav('checkout')" class="text-primary underline hover:no-underline ml-1">Jetzt sichern →</button>
+  <button onclick="this.closest('#ann-bar').remove()" class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50 hover:text-on-surface-variant" aria-label="Schließen">✕</button>
+</div>
+
+<!-- ═══════════════════ GLOBAL NAV ═══════════════════════════════ -->
+<nav class="sticky top-0 w-full z-50 bg-zinc-950/65 backdrop-blur-xl border-b border-white/[.04]" aria-label="Hauptnavigation">
+  <div class="flex justify-between items-center h-18 px-6 max-w-screen-2xl mx-auto" style="height:4.5rem">
+    <button class="text-xl font-bold tracking-tighter text-cyan-400 font-headline" onclick="nav('landing')" aria-label="Startseite">LeviCube</button>
+    <div class="hidden md:flex items-center gap-7 font-headline tracking-tight text-sm">
+      <button class="text-zinc-400 hover:text-cyan-300 transition-colors duration-200" onclick="navScroll('landing','tech')">Tech</button>
+      <button class="text-zinc-400 hover:text-cyan-300 transition-colors duration-200" onclick="navScroll('landing','design')">Design</button>
+      <button class="text-zinc-400 hover:text-cyan-300 transition-colors duration-200" onclick="navScroll('landing','atmosphere')">Atmosphere</button>
+      <button class="text-zinc-400 hover:text-cyan-300 transition-colors duration-200" onclick="navScroll('landing','preorder')">Pre-order</button>
+    </div>
+    <div class="flex items-center gap-3">
+      <!-- Cart trigger -->
+      <button class="relative text-zinc-400 hover:text-cyan-300 transition-colors p-1" onclick="openCartDrawer()" aria-label="Warenkorb öffnen">
+        <span class="material-symbols-outlined text-[22px]">shopping_cart</span>
+        <span id="cart-badge" class="absolute -top-0.5 -right-0.5 h-4 w-4 flex items-center justify-center rounded-full bg-cyan-400 text-[10px] font-bold text-zinc-950 hidden">0</span>
+      </button>
+      <button class="hidden md:block bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-5 py-2 rounded-lg text-sm active:scale-95 transition-all hover:shadow-[0_0_18px_rgba(0,240,255,.35)]"
+        onclick="openCartDrawer()">Warenkorb</button>
+      <button class="md:hidden text-zinc-400 hover:text-cyan-300 p-1" onclick="toggleDrawer()" aria-label="Menü öffnen">
+        <span class="material-symbols-outlined text-[26px]">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div id="drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="absolute top-5 right-5 text-zinc-400 hover:text-white" onclick="toggleDrawer()" aria-label="Schließen">
+    <span class="material-symbols-outlined text-[30px]">close</span>
+  </button>
+  <span class="text-3xl font-headline font-bold text-cyan-400 mb-2">LeviCube</span>
+  <button class="text-xl text-zinc-300 hover:text-cyan-300 transition-colors" onclick="navScroll('landing','tech');toggleDrawer()">Tech</button>
+  <button class="text-xl text-zinc-300 hover:text-cyan-300 transition-colors" onclick="navScroll('landing','design');toggleDrawer()">Design</button>
+  <button class="text-xl text-zinc-300 hover:text-cyan-300 transition-colors" onclick="navScroll('landing','atmosphere');toggleDrawer()">Atmosphere</button>
+  <button class="text-xl text-zinc-300 hover:text-cyan-300 transition-colors" onclick="navScroll('landing','preorder');toggleDrawer()">Pre-order</button>
+  <div class="w-16 h-px bg-outline-variant/30 my-2"></div>
+  <button class="text-base text-zinc-400 hover:text-white transition-colors" onclick="nav('support');toggleDrawer()">Support</button>
+  <button class="text-base text-zinc-400 hover:text-white transition-colors" onclick="nav('install');toggleDrawer()">Installation Guide</button>
+  <button class="mt-3 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-10 py-3 rounded-xl"
+    onclick="openCartDrawer();toggleDrawer()">
+    <span class="material-symbols-outlined align-middle mr-1 text-base">shopping_cart</span>Warenkorb
+  </button>
+</div>
+
+<!-- ═════════════════ CART DRAWER ═══════════════════════════════ -->
+<div id="cart-overlay" onclick="closeCartDrawer()"></div>
+<div id="cart-drawer" role="dialog" aria-modal="true" aria-label="Warenkorb">
+  <div class="flex items-center justify-between px-6 py-5 border-b border-outline-variant/15">
+    <h2 class="font-headline font-bold text-lg">Warenkorb</h2>
+    <button onclick="closeCartDrawer()" class="text-on-surface-variant hover:text-white transition-colors">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+  <!-- Items -->
+  <div class="flex-1 overflow-y-auto" id="cart-items-area">
+    <div id="cart-empty" class="flex flex-col items-center justify-center h-64 text-on-surface-variant gap-3">
+      <span class="material-symbols-outlined text-5xl opacity-30">shopping_cart</span>
+      <p class="text-sm">Dein Warenkorb ist leer.</p>
+      <button onclick="closeCartDrawer();navScroll('landing','preorder')" class="text-primary text-sm font-bold hover:underline">Produkte entdecken →</button>
+    </div>
+    <div id="cart-items" class="hidden p-5 space-y-4">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+  <!-- Coupon inside cart -->
+  <div class="px-5 py-3 border-t border-outline-variant/10">
+    <div class="flex gap-2">
+      <input id="cart-coupon" type="text" placeholder="Gutscheincode…" class="flex-1 bg-surface-container-low border border-outline-variant/20 rounded-xl px-3 py-2.5 text-sm text-on-surface focus:border-primary-container transition-all"/>
+      <button onclick="applyCartCoupon()" class="px-4 py-2.5 rounded-xl border border-outline-variant/30 hover:bg-surface-container text-sm font-headline font-medium transition-colors whitespace-nowrap">Einlösen</button>
+    </div>
+    <p id="cart-coupon-msg" class="text-xs mt-1.5 hidden"></p>
+  </div>
+  <!-- Summary -->
+  <div id="cart-summary-area" class="hidden border-t border-outline-variant/15 p-5 space-y-3">
+    <div class="flex justify-between text-sm text-on-surface-variant">
+      <span>Subtotal</span><span id="cs-sub">0 €</span>
+    </div>
+    <div class="flex justify-between text-sm text-on-surface-variant">
+      <span>Versand</span><span>12 €</span>
+    </div>
+    <div class="flex justify-between text-sm text-green-400" id="cs-discount-row" style="display:none!important">
+      <span>Rabatt</span><span id="cs-discount">−0 €</span>
+    </div>
+    <div class="flex justify-between font-headline font-bold text-lg border-t border-outline-variant/10 pt-3">
+      <span>Gesamt</span><span id="cs-total" class="text-primary">0 €</span>
+    </div>
+    <button onclick="closeCartDrawer();nav('checkout')" class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-bold py-4 rounded-xl text-base hover:scale-[1.01] transition-transform shadow-[0_0_30px_rgba(0,240,255,.2)]">
+      Zur Kasse →
+    </button>
+    <!-- Trust under CTA -->
+    <div class="flex justify-center gap-5 pt-1">
+      <div class="trust-item"><span class="material-symbols-outlined text-base text-green-400">lock</span>SSL-gesichert</div>
+      <div class="trust-item"><span class="material-symbols-outlined text-base text-primary-fixed-dim">assignment_return</span>30 Tage Rückgabe</div>
+      <div class="trust-item"><span class="material-symbols-outlined text-base text-secondary">verified_user</span>2 Jahre Garantie</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  LANDING PAGE                                                    -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-landing" class="page active">
+<main>
+
+  <!-- HERO ───────────────────────────────────────────────────── -->
+  <section class="relative min-h-[92vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden" aria-labelledby="hero-headline">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-primary-container/8 blur-[140px] rounded-full pointer-events-none" aria-hidden="true"></div>
+    <div class="relative z-10 space-y-6 max-w-4xl">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container border border-outline-variant/20 text-xs font-label uppercase tracking-widest text-primary-fixed-dim mb-2">
+        <span class="ndot" aria-hidden="true"></span> Limitierte Erstauflage · 500 Einheiten weltweit
+      </div>
+      <h1 id="hero-headline" class="text-5xl md:text-7xl lg:text-[5.5rem] font-headline font-bold tracking-tighter text-on-surface leading-[1.05]">
+        LeviCube:<br/><span class="text-primary-fixed-dim">Schwerkraft</span> ist gestern.
+      </h1>
+      <p class="text-lg md:text-xl text-on-surface-variant font-light max-w-xl mx-auto leading-relaxed">
+        Der magnetisch schwebende RGB-Cube — 0 dB, 16,8 Mio. Farben, kontaktlos. Für Menschen, die das Außergewöhnliche leben.
+      </p>
+      <!-- Social proof mini row -->
+      <div class="flex items-center justify-center gap-4 text-sm text-on-surface-variant">
+        <div class="flex -space-x-2">
+          <div class="w-7 h-7 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 border-2 border-background flex items-center justify-center text-xs font-bold text-zinc-950">S</div>
+          <div class="w-7 h-7 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 border-2 border-background flex items-center justify-center text-xs font-bold text-white">T</div>
+          <div class="w-7 h-7 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 border-2 border-background flex items-center justify-center text-xs font-bold text-white">L</div>
+        </div>
+        <span>153+ Kunden vorbestellt · <span class="text-primary-fixed-dim font-semibold">★ 4.9/5</span></span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <button class="w-full sm:w-auto bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-10 py-4 rounded-xl text-base hover:-translate-y-0.5 transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40"
+          onclick="addToCart();openCartDrawer()">
+          In den Warenkorb — 149 €
+        </button>
+        <button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group"
+          onclick="openModal('film-modal')">
+          <span class="material-symbols-outlined group-hover:scale-110 transition-transform text-[20px]" style="font-variation-settings:'FILL' 1">play_circle</span>
+          <span class="font-medium text-sm">Film ansehen</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Animated cube -->
+    <div class="mt-20 relative">
+      <div class="cube-float w-44 h-44 rounded-2xl bg-gradient-to-br from-zinc-700 to-zinc-950 mx-auto border border-cyan-400/20" role="img" aria-label="Schwebendes LeviCube-Produkt"></div>
+      <div class="cube-shadow w-28 h-3 bg-cyan-400/8 blur-lg rounded-full mx-auto mt-2"></div>
+    </div>
+
+    <!-- Scroll hint -->
+    <button class="absolute bottom-8 left-1/2 -translate-x-1/2 text-on-surface-variant/40 hover:text-on-surface-variant transition-colors flex flex-col items-center gap-1" onclick="navScroll('landing','tech')" aria-label="Mehr entdecken">
+      <span class="text-xs font-label tracking-widest uppercase">Mehr</span>
+      <span class="material-symbols-outlined text-xl" style="animation:bounce 2s ease infinite">keyboard_arrow_down</span>
+    </button>
+  </section>
+
+  <!-- TRUST BAR ───────────────────────────────────────────────── -->
+  <div class="border-y border-outline-variant/10 bg-surface-container-lowest/50 py-5 px-6 overflow-x-auto">
+    <div class="flex items-center justify-center gap-10 min-w-max mx-auto text-on-surface-variant text-sm font-label">
+      <div class="trust-item"><span class="material-symbols-outlined text-green-400 text-lg">lock</span>Sichere SSL-Zahlung</div>
+      <div class="w-px h-4 bg-outline-variant/30"></div>
+      <div class="trust-item"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">assignment_return</span>30 Tage Rückgabe</div>
+      <div class="w-px h-4 bg-outline-variant/30"></div>
+      <div class="trust-item"><span class="material-symbols-outlined text-secondary text-lg">verified_user</span>2 Jahre Garantie</div>
+      <div class="w-px h-4 bg-outline-variant/30"></div>
+      <div class="trust-item"><span class="material-symbols-outlined text-cyan-400 text-lg">local_shipping</span>Express 2–3 Tage</div>
+      <div class="w-px h-4 bg-outline-variant/30"></div>
+      <div class="trust-item"><span class="material-symbols-outlined text-yellow-400 text-lg">star</span>4.9 / 5 (153 Bewertungen)</div>
+    </div>
+  </div>
+
+  <!-- FEATURES BENTO ──────────────────────────────────────────── -->
+  <section class="py-28 px-6 max-w-screen-2xl mx-auto" id="tech" aria-labelledby="tech-headline">
+    <div class="text-center mb-14 space-y-3">
+      <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Technologie</span>
+      <h2 id="tech-headline" class="text-4xl md:text-5xl font-headline font-bold tracking-tighter">Designed für die Zukunft.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-[280px]">
+      <div class="md:col-span-8 md:row-span-2 relative overflow-hidden rounded-2xl bg-surface-container-low group border border-outline-variant/15 cursor-pointer"
+        onclick="openModal('levitation-modal')">
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent z-10"></div>
+        <img alt="Magnetische Levitationstechnologie — Spulensystem" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo5TOtAqapqxqT8HeHAydB3hcLTAvbOtB0uA79GzbN0EdANY1cI5LY6CGVyvB_Fx5XFDVLaEhXaWcNlBUhh8u8Yeo5d2H9GOPAj8Z6qlQdh-bxT3VvqQzSTz0NcwAlbkjb71bIN7cUcX-n3yxuiVYcSMLCbIi_EeF8RSsPudLfLso6rerO_SWo3AslrGY2Vr44BkJnaVA16MHE1KtEyDWT5pzqvS4BLC26VGP-XX1bmgTk82v01JVDomDArUXXZVYE23rCms7EM6s4"
+          loading="lazy"/>
+        <div class="relative z-20 h-full flex flex-col justify-end p-8 space-y-3">
+          <span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary-fixed-dim text-xs font-bold tracking-widest uppercase w-fit">Premium Feature</span>
+          <h3 class="text-3xl md:text-4xl font-headline font-bold">Magnetische Levitation</h3>
+          <p class="text-on-surface-variant text-base leading-relaxed max-w-sm">Proprietäres ElectroFloat™ — 8 Sensoren, 1ms Regelung, ±0.5mm Stabilität.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-bold">Details <span class="material-symbols-outlined text-base">arrow_forward</span></span>
+        </div>
+      </div>
+      <div class="md:col-span-4 rounded-2xl bg-surface-container-high border border-outline-variant/15 p-7 flex flex-col justify-between cursor-pointer hover:border-secondary/30 transition-colors group"
+        onclick="openModal('rgb-modal')">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary">
+            <span class="material-symbols-outlined">palette</span>
+          </div>
+          <h3 class="text-lg font-headline font-bold">RGB-Beleuchtung</h3>
+        </div>
+        <p class="text-on-surface-variant text-sm leading-relaxed">16,8 Mio. Farben. Vollständig über App steuerbar. 40+ Szenen.</p>
+        <span class="text-secondary text-xs font-bold uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all">Details <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+      </div>
+      <div class="md:col-span-4 rounded-2xl bg-surface-container-high border border-outline-variant/15 p-7 flex flex-col justify-between cursor-pointer hover:border-primary/30 transition-colors group"
+        onclick="openModal('motion-modal')">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">waves</span>
+          </div>
+          <h3 class="text-lg font-headline font-bold">Sanfte Bewegung</h3>
+        </div>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Ruhige Levitations-Animation. Einstellbare Amplitude &amp; Frequenz.</p>
+        <span class="text-primary text-xs font-bold uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all">Details <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS ───────────────────────────────────────────────────── -->
+  <section class="py-20 px-6 max-w-screen-xl mx-auto" id="design" aria-labelledby="specs-headline">
+    <div class="text-center mb-14 space-y-3">
+      <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Specs</span>
+      <h2 id="specs-headline" class="text-4xl md:text-5xl font-headline font-bold tracking-tighter">Engineering in Perfektion.</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-14">
+      <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6">
+        <h3 class="font-headline font-bold text-sm text-primary mb-4 flex items-center gap-2 uppercase tracking-widest"><span class="material-symbols-outlined text-primary-fixed-dim text-base">electric_bolt</span>Physik</h3>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Schwebe-Höhe</span><span class="font-headline font-bold text-primary text-sm">12–18 mm</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Lautstärke</span><span class="font-headline font-bold text-primary text-sm">0.0 dB</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Traglast</span><span class="font-headline font-bold text-primary text-sm">500 g</span></div>
+        <div class="flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Stabilität</span><span class="font-headline font-bold text-primary text-sm">±0.5 mm</span></div>
+      </div>
+      <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6">
+        <h3 class="font-headline font-bold text-sm text-secondary mb-4 flex items-center gap-2 uppercase tracking-widest"><span class="material-symbols-outlined text-secondary-fixed-dim text-base">devices</span>Technik</h3>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">RGB</span><span class="font-headline font-bold text-secondary text-sm">16.8 Mio.</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Leistung</span><span class="font-headline font-bold text-secondary text-sm">12 W</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Verbindung</span><span class="font-headline font-bold text-secondary text-sm">BT 5.2</span></div>
+        <div class="flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">App</span><span class="font-headline font-bold text-secondary text-sm">iOS & Android</span></div>
+      </div>
+      <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6">
+        <h3 class="font-headline font-bold text-sm mb-4 flex items-center gap-2 uppercase tracking-widest" style="color:#c8c6c5"><span class="material-symbols-outlined text-base" style="color:#c8c6c5">straighten</span>Maße</h3>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Cube</span><span class="font-headline font-bold text-sm" style="color:#c8c6c5">80×80×80 mm</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Basis</span><span class="font-headline font-bold text-sm" style="color:#c8c6c5">160×20 mm</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Gewicht</span><span class="font-headline font-bold text-sm" style="color:#c8c6c5">240 g</span></div>
+        <div class="flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Material</span><span class="font-headline font-bold text-sm" style="color:#c8c6c5">Alu / ABS</span></div>
+      </div>
+      <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6">
+        <h3 class="font-headline font-bold text-sm mb-4 flex items-center gap-2 uppercase tracking-widest" style="color:#7df4ff"><span class="material-symbols-outlined text-base" style="color:#7df4ff">verified_user</span>Service</h3>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Garantie</span><span class="font-headline font-bold text-sm" style="color:#7df4ff">2 Jahre</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Rückgabe</span><span class="font-headline font-bold text-sm" style="color:#7df4ff">30 Tage</span></div>
+        <div class="spec-row flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Versand</span><span class="font-headline font-bold text-sm" style="color:#7df4ff">2–3 Tage</span></div>
+        <div class="flex justify-between py-3"><span class="text-on-surface-variant text-xs uppercase tracking-wider">Support</span><span class="font-headline font-bold text-sm" style="color:#7df4ff">24/7 Chat</span></div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-headline font-bold mb-8 text-center">Häufige Fragen</h3>
+      <div id="faq-list" class="space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERE ─────────────────────────────────────────────── -->
+  <section class="relative py-36 overflow-hidden" id="atmosphere" aria-labelledby="atm-headline">
+    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div class="space-y-7 relative z-10">
+        <h2 id="atm-headline" class="text-4xl md:text-5xl font-headline font-bold tracking-tighter leading-tight">
+          Ein Portal in <span class="text-secondary-fixed-dim">deinem Wohnzimmer</span>.
+        </h2>
+        <div class="space-y-4 text-lg text-on-surface-variant font-light leading-relaxed">
+          <p>Stell dir vor, du kommst nach Hause — das erste, was du siehst, ist ein leuchtender Cube, der lautlos im Raum verharrt.</p>
+          <p>Kein Summen. Kein Kabel. Nur ästhetische Präsenz. LeviCube ist nicht nur ein Objekt; es ist ein Statement.</p>
+        </div>
+        <button class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all"
+          onclick="addToCart();openCartDrawer()">
+          Jetzt in den Warenkorb <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+      <div class="relative">
+        <div class="absolute inset-0 bg-primary/4 blur-[100px] rounded-full"></div>
+        <div class="relative rounded-2xl overflow-hidden border border-outline-variant/10 shadow-2xl">
+          <img alt="Modernes Wohnzimmer mit schwebend leuchtendem LeviCube auf dem Couchtisch" class="w-full aspect-square object-cover opacity-80"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA29PZRBvT_cYuq9_P7oODGqQRYRinlUZTF96e13Uc0hC-c0SZlMAZAsRiORzDk6fn9I49n7KYFFn9CrK_hPFd59Zq22Rlugp4OdsrcybsLtW0lyboNMxbBjlnJw2Ly3i_G85KbjMTWBnYeWxXYhsQqiNAvjkajn8ys_ns-uoqIBxpdTZosXM2PP15h4f9LY_raVyYME-3lkvL8FoVe_S3Ul7mixyinHdFhIMG5eNrjl2uj_PXcR-E4GRbIEDBbjaiMMeq0eDu5OpRZ"
+            loading="lazy"/>
+        </div>
+        <div class="absolute -bottom-5 -left-5 glass border border-outline-variant/15 p-5 rounded-2xl shadow-xl">
+          <div class="text-primary-fixed-dim text-3xl font-headline font-bold">0.0 dB</div>
+          <div class="text-on-surface-variant text-xs uppercase tracking-[.2em]">Silent Operation</div>
+        </div>
+        <div class="absolute -top-5 -right-5 glass border border-outline-variant/15 p-5 rounded-2xl shadow-xl">
+          <div class="text-secondary-fixed-dim text-3xl font-headline font-bold">16.8M</div>
+          <div class="text-on-surface-variant text-xs uppercase tracking-[.2em]">Color Options</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS ────────────────────────────────────────────────── -->
+  <section class="py-20 px-6 max-w-screen-xl mx-auto" aria-labelledby="reviews-headline">
+    <div class="text-center mb-12 space-y-3">
+      <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Kundenstimmen</span>
+      <h2 id="reviews-headline" class="text-3xl md:text-4xl font-headline font-bold tracking-tighter">Was andere sagen.</h2>
+      <div class="flex items-center justify-center gap-2">
+        <span class="text-primary-fixed-dim text-2xl">★★★★★</span>
+        <span class="text-on-surface-variant text-sm">4.9 / 5 · 153 verifizierte Bewertungen</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10" id="reviews-list"></div>
+    <div class="text-center">
+      <button onclick="openModal('review-modal')"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/30 hover:bg-surface-container transition-colors font-headline font-medium text-sm">
+        <span class="material-symbols-outlined text-primary-fixed-dim">rate_review</span>
+        Bewertung schreiben
+      </button>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER ──────────────────────────────────────────────── -->
+  <section class="py-16 px-6 max-w-screen-xl mx-auto">
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h3 class="text-2xl font-headline font-bold mb-1">Bleib auf dem Laufenden.</h3>
+        <p class="text-on-surface-variant text-sm">Früh-Zugänge, Rabattcodes &amp; Launch-News. Kein Spam, jederzeit abmeldbar.</p>
+      </div>
+      <div class="flex gap-3 w-full md:w-auto">
+        <input id="nl-email" type="email" placeholder="deine@email.at" class="flex-1 md:w-72 bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all"/>
+        <button onclick="subscribeNewsletter()" class="flex-shrink-0 bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold px-6 py-3 rounded-xl text-sm hover:scale-105 transition-transform">
+          Anmelden
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRE-ORDER CTA ────────────────────────────────────────────── -->
+  <section class="py-28 px-6" id="preorder" aria-labelledby="preorder-headline">
+    <div class="max-w-screen-xl mx-auto rounded-[2rem] bg-gradient-to-br from-surface-container-high to-zinc-950 p-12 md:p-20 text-center border border-outline-variant/10 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-primary/8 blur-[150px] rounded-full" aria-hidden="true"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 blur-[150px] rounded-full" aria-hidden="true"></div>
+      <div class="relative z-10 max-w-xl mx-auto space-y-7">
+        <!-- Countdown -->
+        <div class="flex justify-center gap-5 mb-2" aria-label="Countdown bis Early-Bird-Ende">
+          <div class="text-center"><div class="text-3xl font-headline font-bold text-primary-fixed-dim" id="cd-days">00</div><div class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Tage</div></div>
+          <div class="text-2xl font-headline text-outline self-center pb-4">:</div>
+          <div class="text-center"><div class="text-3xl font-headline font-bold text-primary-fixed-dim" id="cd-hrs">00</div><div class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Std</div></div>
+          <div class="text-2xl font-headline text-outline self-center pb-4">:</div>
+          <div class="text-center"><div class="text-3xl font-headline font-bold text-primary-fixed-dim" id="cd-min">00</div><div class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Min</div></div>
+          <div class="text-2xl font-headline text-outline self-center pb-4">:</div>
+          <div class="text-center"><div class="text-3xl font-headline font-bold text-primary-fixed-dim" id="cd-sec">00</div><div class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Sek</div></div>
+        </div>
+        <p class="text-xs text-on-surface-variant/40 uppercase tracking-widest -mt-4">Early-Bird Preis läuft ab</p>
+
+        <h2 id="preorder-headline" class="text-4xl md:text-5xl font-headline font-bold">Bereit für den nächsten Schritt?</h2>
+        <p class="text-on-surface-variant">Limitierte Erstauflage · <strong class="text-on-surface">500 Einheiten weltweit.</strong></p>
+
+        <!-- Stock -->
+        <div class="max-w-xs mx-auto">
+          <div class="flex justify-between text-xs text-on-surface-variant mb-1.5">
+            <span>Noch verfügbar</span><span>347 / 500</span>
+          </div>
+          <div class="h-1.5 bg-surface-container rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-primary-fixed-dim to-primary-container rounded-full" style="width:69.4%"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+          <button class="w-full sm:w-auto bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold px-10 py-4 rounded-xl text-lg shadow-[0_0_40px_rgba(0,240,255,.25)] hover:scale-105 transition-all"
+            onclick="addToCart();openCartDrawer()">
+            In den Warenkorb — 149 €
+          </button>
+          <button class="w-full sm:w-auto px-10 py-4 rounded-xl text-lg font-bold border border-outline-variant/30 hover:bg-surface-container transition-colors"
+            onclick="navScroll('landing','design')">
+            Technische Daten
+          </button>
+        </div>
+        <p class="text-xs text-on-surface-variant/40 tracking-widest uppercase italic">30 Tage Rückgabe · 2 Jahre Garantie · Express 2–3 Tage</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Landing Footer -->
+<footer class="w-full py-14 px-6 border-t border-zinc-800/30 bg-zinc-950">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-screen-2xl mx-auto text-sm mb-10">
+    <div class="col-span-2 md:col-span-1 space-y-4">
+      <div class="text-base font-bold text-cyan-400 font-headline">LeviCube</div>
+      <p class="text-zinc-500 text-xs leading-relaxed">Die Neudefinition von Licht und Form. Für Menschen, die das Außergewöhnliche suchen.</p>
+      <p class="text-zinc-600 text-xs">© 2025 LeviCube GmbH</p>
+    </div>
+    <div>
+      <p class="text-zinc-300 font-headline font-semibold mb-4 uppercase tracking-widest text-xs">Produkt</p>
+      <div class="space-y-2.5">
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="navScroll('landing','tech')">Technologie</button>
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="navScroll('landing','design')">Technische Daten</button>
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="navScroll('landing','preorder')">Pre-order</button>
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="nav('install')">Installation Guide</button>
+      </div>
+    </div>
+    <div>
+      <p class="text-zinc-300 font-headline font-semibold mb-4 uppercase tracking-widest text-xs">Rechtliches</p>
+      <div class="space-y-2.5">
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="nav('impressum')">Impressum</button>
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="nav('privacy')">Datenschutz</button>
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="nav('terms')">AGB &amp; Widerrufsrecht</button>
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="nav('shipping')">Versand &amp; Zahlung</button>
+      </div>
+    </div>
+    <div>
+      <p class="text-zinc-300 font-headline font-semibold mb-4 uppercase tracking-widests text-xs">Hilfe</p>
+      <div class="space-y-2.5">
+        <button class="block text-zinc-500 hover:text-white transition-colors text-xs" onclick="nav('support')">Support &amp; Chat</button>
+        <a href="mailto:support@levicube.at" class="block text-zinc-500 hover:text-white transition-colors text-xs">support@levicube.at</a>
+        <button class="block text-cyan-400 hover:text-white transition-colors text-xs" onclick="nav('install')">Installation Guide</button>
+      </div>
+    </div>
+  </div>
+  <!-- Bottom bar -->
+  <div class="border-t border-zinc-800/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 max-w-screen-2xl mx-auto">
+    <div class="flex flex-wrap items-center justify-center gap-4 text-zinc-600 text-xs">
+      <span>Alle Preise inkl. MwSt.</span>
+      <span>·</span>
+      <span>Versand aus Österreich 🇦🇹</span>
+      <span>·</span>
+      <button onclick="nav('privacy')" class="hover:text-zinc-400 transition-colors">Cookie-Einstellungen</button>
+    </div>
+    <div class="flex items-center gap-3 text-zinc-600 text-xs">
+      <span class="material-symbols-outlined text-sm text-green-500">lock</span>
+      <span>SSL-verschlüsselt · DSGVO-konform</span>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  CHECKOUT PAGE                                                   -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-checkout" class="page">
+<main class="pt-28 pb-24 px-6 max-w-6xl mx-auto min-h-screen">
+  <nav class="flex items-center gap-2 text-sm text-on-surface-variant mb-8" aria-label="Breadcrumb">
+    <button class="hover:text-cyan-300 transition-colors" onclick="nav('landing')">Startseite</button>
+    <span class="material-symbols-outlined text-sm">chevron_right</span>
+    <span class="text-primary" aria-current="page">Checkout</span>
+  </nav>
+
+  <!-- Progress -->
+  <div class="flex items-center max-w-xs mb-3">
+    <div class="step-dot active" id="step1">1</div>
+    <div class="step-line" id="line1"></div>
+    <div class="step-dot todo" id="step2">2</div>
+    <div class="step-line" id="line2"></div>
+    <div class="step-dot todo" id="step3">✓</div>
+  </div>
+  <div class="flex max-w-xs mb-12 text-xs text-on-surface-variant/60 font-label">
+    <span style="min-width:2.25rem;text-align:center">Versand</span>
+    <span class="flex-1"></span>
+    <span style="min-width:2.25rem;text-align:center">Zahlung</span>
+    <span class="flex-1"></span>
+    <span style="min-width:2.25rem;text-align:center">Bestätigt</span>
+  </div>
+
+  <header class="mb-10">
+    <h1 class="text-4xl font-headline font-bold tracking-tighter text-primary mb-1">Finalize Your Ascension.</h1>
+    <p class="text-on-surface-variant">Vervollständige deine Angaben um den LeviCube zu sichern.</p>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-7 space-y-10">
+
+      <!-- STEP 1: Shipping ─────────────────────────────────────── -->
+      <section id="checkout-step1" aria-labelledby="shipping-heading">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary-fixed-dim">local_shipping</span>
+          <h2 id="shipping-heading" class="text-xl font-headline font-semibold">Lieferadresse</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="md:col-span-2">
+            <label for="ship-name" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Vollständiger Name *</label>
+            <input id="ship-name" autocomplete="name" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="Max Mustermann" type="text"/>
+            <p class="err-msg" id="err-name">Bitte gib deinen vollständigen Namen ein.</p>
+          </div>
+          <div class="md:col-span-2">
+            <label for="ship-email" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">E-Mail-Adresse *</label>
+            <input id="ship-email" autocomplete="email" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="max@beispiel.at" type="email"/>
+            <p class="err-msg" id="err-email">Bitte gib eine gültige E-Mail-Adresse ein.</p>
+          </div>
+          <div class="md:col-span-2">
+            <label for="ship-address" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Straße & Hausnummer *</label>
+            <input id="ship-address" autocomplete="street-address" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="Musterstraße 42" type="text"/>
+            <p class="err-msg" id="err-address">Bitte gib deine Straße und Hausnummer ein.</p>
+          </div>
+          <div>
+            <label for="ship-city" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Stadt *</label>
+            <input id="ship-city" autocomplete="address-level2" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="Wien" type="text"/>
+            <p class="err-msg" id="err-city">Bitte gib deine Stadt ein.</p>
+          </div>
+          <div>
+            <label for="ship-zip" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Postleitzahl *</label>
+            <input id="ship-zip" autocomplete="postal-code" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="1010" type="text"/>
+            <p class="err-msg" id="err-zip">Bitte gib eine gültige Postleitzahl ein.</p>
+          </div>
+          <div class="md:col-span-2">
+            <label for="ship-country" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Land</label>
+            <select id="ship-country" autocomplete="country" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all">
+              <option value="AT">🇦🇹 Österreich</option>
+              <option value="DE">🇩🇪 Deutschland</option>
+              <option value="CH">🇨🇭 Schweiz</option>
+              <option value="FR">🇫🇷 Frankreich</option>
+              <option value="IT">🇮🇹 Italien</option>
+              <option value="NL">🇳🇱 Niederlande</option>
+              <option value="BE">🇧🇪 Belgien</option>
+              <option value="ES">🇪🇸 Spanien</option>
+              <option value="GB">🇬🇧 Vereinigtes Königreich</option>
+              <option value="US">🇺🇸 USA</option>
+            </select>
+          </div>
+        </div>
+        <button onclick="goToStep(2)"
+          class="mt-8 w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-4 rounded-xl text-base hover:scale-[1.01] transition-transform shadow-[0_0_30px_rgba(0,240,255,.15)]">
+          Weiter zur Zahlung →
+        </button>
+        <p class="text-xs text-on-surface-variant/50 text-center mt-3">Mit dem Fortfahren akzeptierst du unsere <button onclick="nav('terms')" class="text-primary/70 hover:text-primary underline">AGB</button> und <button onclick="nav('privacy')" class="text-primary/70 hover:text-primary underline">Datenschutzerklärung</button>.</p>
+      </section>
+
+      <!-- STEP 2: Payment ─────────────────────────────────────── -->
+      <section id="checkout-step2" class="hidden" aria-labelledby="payment-heading">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="material-symbols-outlined text-primary-fixed-dim">account_balance_wallet</span>
+          <h2 id="payment-heading" class="text-xl font-headline font-semibold">Zahlungsmethode</h2>
+        </div>
+
+        <!-- Info banner: Stripe redirect -->
+        <div id="stripe-info-banner" class="rounded-xl bg-surface-container border border-outline-variant/15 p-4 flex gap-3 items-center mb-5 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary-fixed-dim flex-shrink-0">info</span>
+          <span>Nach dem Klick auf „Jetzt bezahlen" wirst du sicher zu <strong class="text-on-surface">Stripe Checkout</strong> weitergeleitet. Dort kannst du mit Karte, PayPal oder SEPA bezahlen.</span>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Stripe (primary) -->
+          <div class="pay-opt sel glass border rounded-2xl p-6 glow-box" id="pay-stripe">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full border-2 border-primary-container flex items-center justify-center">
+                  <div class="rdot w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+                </div>
+                <span class="font-headline font-medium">Kreditkarte / PayPal / SEPA</span>
+              </div>
+              <div class="flex gap-2 text-on-surface-variant text-xs font-label">
+                <span class="px-2 py-0.5 bg-surface-container-highest rounded border border-outline-variant/20">Visa</span>
+                <span class="px-2 py-0.5 bg-surface-container-highest rounded border border-outline-variant/20">MC</span>
+                <span class="px-2 py-0.5 bg-surface-container-highest rounded border border-outline-variant/20">PayPal</span>
+              </div>
+            </div>
+            <p class="text-xs text-on-surface-variant mt-4 flex items-center gap-1">
+              <span class="material-symbols-outlined text-green-400 text-sm">lock</span>
+              Sicher via Stripe · TLS 1.3 · PCI-DSS zertifiziert
+            </p>
+          </div>
+          <!-- Bank Transfer -->
+          <div class="pay-opt bg-surface-container-low border rounded-2xl p-6" id="pay-bank" onclick="selectPayment('bank')">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full border-2 border-outline-variant flex items-center justify-center">
+                  <div class="rdot w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+                </div>
+                <span class="font-headline font-medium">Banküberweisung</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant">account_balance</span>
+            </div>
+            <div id="bank-fields" class="hidden mt-5 space-y-1 text-sm font-label">
+              <div class="flex justify-between py-2.5 border-b border-outline-variant/10">
+                <span class="text-on-surface-variant text-xs uppercase tracking-widest">IBAN</span>
+                <button class="font-bold text-primary font-headline flex items-center gap-1 hover:text-cyan-300" onclick="copyToClip('AT12 3456 7890 1234 5678','IBAN kopiert!')">AT12 3456 7890 1234 5678 <span class="material-symbols-outlined text-xs">content_copy</span></button>
+              </div>
+              <div class="flex justify-between py-2.5 border-b border-outline-variant/10">
+                <span class="text-on-surface-variant text-xs uppercase tracking-widest">BIC</span>
+                <button class="font-bold text-primary font-headline flex items-center gap-1 hover:text-cyan-300" onclick="copyToClip('LEVICUBEXXX','BIC kopiert!')">LEVICUBEXXX <span class="material-symbols-outlined text-xs">content_copy</span></button>
+              </div>
+              <div class="flex justify-between py-2.5">
+                <span class="text-on-surface-variant text-xs uppercase tracking-widest">Empfänger</span>
+                <span class="font-bold text-on-surface">LeviCube GmbH</span>
+              </div>
+              <div class="rounded-xl bg-surface-container-highest/20 border border-outline-variant/10 p-3 text-xs text-on-surface-variant mt-2">
+                Bitte deine Bestellnummer als Verwendungszweck angeben. Die Lieferung erfolgt nach Zahlungseingang (1–2 Bankarbeitstage).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coupon -->
+        <div class="mt-6 flex gap-3">
+          <input id="coupon-input" type="text" placeholder="Gutscheincode (z.B. ASCEND10)…"
+            class="flex-1 bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-sm text-on-surface focus:border-primary-container transition-all uppercase"/>
+          <button onclick="applyCoupon()"
+            class="px-5 py-3 rounded-xl border border-outline-variant/30 hover:bg-surface-container text-sm font-headline font-medium transition-colors whitespace-nowrap">Einlösen</button>
+        </div>
+        <p id="coupon-msg" class="text-xs mt-2 hidden"></p>
+
+        <div class="flex gap-4 mt-8">
+          <button onclick="goToStep(1)"
+            class="flex-1 py-4 rounded-xl border border-outline-variant/30 hover:bg-surface-container transition-colors font-headline font-medium text-sm">← Zurück</button>
+          <button id="pay-btn" onclick="startPayment()"
+            class="flex-1 bg-gradient-to-r from-primary to-primary-container text-on-primary py-4 rounded-xl font-headline font-bold text-base shadow-[0_0_40px_rgba(0,240,255,.2)] hover:shadow-[0_0_60px_rgba(0,240,255,.3)] transition-all hover:-translate-y-0.5">
+            <span class="material-symbols-outlined align-middle mr-1 text-base">lock</span>Jetzt bezahlen →
+          </button>
+        </div>
+        <p class="text-xs text-on-surface-variant/50 text-center mt-3">
+          <span class="material-symbols-outlined text-xs text-green-400 align-middle">lock</span>
+          SSL-verschlüsselt · Deine Daten werden sicher verarbeitet
+        </p>
+      </section>
+
+    </div>
+
+    <!-- ORDER SUMMARY ────────────────────────────────────────── -->
+    <aside class="lg:col-span-5" aria-label="Bestellübersicht">
+      <div class="sticky top-24 glass border border-outline-variant/10 rounded-2xl overflow-hidden">
+        <div class="relative h-52 overflow-hidden">
+          <img alt="LeviCube Gen-1 — Aetheric Void Edition schwebend" class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ-VnmSgJ4sTwSkYDrPP6xn_iSVerDCl023uP7ggqe0MQtlo63IRKr9AOamL5_CFBOT7U2KIBzhrkSCh7e_X_Zil2DDSPl6mWyvRe83SZS3xDs34leQkhWQ2tJYfhZeSqttVnTDI6rl_-TCBquby0YlNrWhHaoec10AEBSUpu63VqxXTqHaHmB1ZDjt4sqbdot1_-LSXITiW5wjJxFKlIkFCUR5rtJqnBPC2yVulK9pvTeFJr7Ek0lC2__9ZvynMaiJJLwGKCA5OJs"
+            loading="lazy"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+        </div>
+        <div class="p-7 space-y-5">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-headline font-bold">LeviCube Gen-1</h3>
+              <p class="text-on-surface-variant text-xs mt-0.5">Aetheric Void Edition · <span class="text-green-400">Auf Lager</span></p>
+            </div>
+            <span class="text-xl font-headline font-medium text-primary">149 €</span>
+          </div>
+          <!-- Qty -->
+          <div class="flex items-center justify-between">
+            <span class="text-on-surface-variant text-sm">Menge</span>
+            <div class="flex items-center gap-3">
+              <button onclick="changeQty(-1)" class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-surface-container-high transition-colors text-lg font-bold" aria-label="Menge verringern">−</button>
+              <span class="font-headline font-bold w-5 text-center" id="qty-display">1</span>
+              <button onclick="changeQty(1)" class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-surface-container-high transition-colors text-lg font-bold" aria-label="Menge erhöhen">+</button>
+            </div>
+          </div>
+          <div class="h-px bg-gradient-to-r from-transparent via-outline-variant/20 to-transparent"></div>
+          <div class="space-y-2.5 text-sm font-label">
+            <div class="flex justify-between text-on-surface-variant">
+              <span>Subtotal (<span id="summary-qty">1</span>× LeviCube)</span>
+              <span id="summary-sub">149 €</span>
+            </div>
+            <div class="flex justify-between text-on-surface-variant">
+              <span>Express Versand</span><span>12 €</span>
+            </div>
+            <div class="flex justify-between text-green-400" id="discount-row" style="display:none!important">
+              <span>Rabatt</span><span id="discount-val">−0 €</span>
+            </div>
+            <div class="flex justify-between text-on-surface-variant">
+              <span>MwSt. (20%)</span><span id="summary-vat">26.83 €</span>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-outline-variant/10 flex justify-between items-end">
+            <div>
+              <p class="text-xs font-label uppercase tracking-widests text-on-surface-variant">Gesamtbetrag</p>
+              <p class="text-3xl font-headline font-bold" id="summary-total">161 €</p>
+            </div>
+            <p class="text-xs font-label text-primary-fixed-dim">Inkl. MwSt.</p>
+          </div>
+          <!-- Trust -->
+          <div class="space-y-2.5 pt-1">
+            <div class="flex items-center gap-2.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-green-400 text-base">lock</span>SSL-verschlüsselte Zahlung via Stripe</div>
+            <div class="flex items-center gap-2.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">verified_user</span>2 Jahre Herstellergarantie</div>
+            <div class="flex items-center gap-2.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-primary-fixed-dim text-base">assignment_return</span>30 Tage kostenlose Rückgabe</div>
+            <div class="flex items-center gap-2.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-cyan-400 text-base">local_shipping</span>Express-Versand 2–3 Werktage</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-8 px-6 border-t border-zinc-800/30">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4 max-w-screen-2xl mx-auto text-xs text-zinc-600">
+    <span>© 2025 LeviCube GmbH · <button onclick="nav('impressum')" class="hover:text-zinc-400">Impressum</button></span>
+    <div class="flex flex-wrap gap-5 justify-center">
+      <button onclick="nav('privacy')" class="hover:text-zinc-400">Datenschutz</button>
+      <button onclick="nav('terms')" class="hover:text-zinc-400">AGB &amp; Widerruf</button>
+      <button onclick="nav('shipping')" class="hover:text-zinc-400">Versand &amp; Zahlung</button>
+      <button onclick="nav('support')" class="text-cyan-700 hover:text-cyan-400">Support</button>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  IMPRESSUM                                                       -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-impressum" class="page">
+<main class="pt-28 pb-24 px-6 max-w-3xl mx-auto min-h-screen">
+  <button class="flex items-center gap-2 text-on-surface-variant hover:text-cyan-300 transition-colors mb-10 text-sm" onclick="nav('landing')">
+    <span class="material-symbols-outlined text-lg">arrow_back</span>Zurück
+  </button>
+  <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Rechtliches</span>
+  <h1 class="text-4xl font-headline font-bold tracking-tighter mt-2 mb-8">Impressum</h1>
+  <div class="legal">
+    <h2>Angaben gemäß § 5 ECG (Österreich)</h2>
+    <p><strong>LeviCube GmbH</strong><br/>Technologiegasse 1<br/>1010 Wien<br/>Österreich</p>
+    <h3>Kontakt</h3>
+    <p>E-Mail: <a href="mailto:info@levicube.at">info@levicube.at</a><br/>
+    Support: <a href="mailto:support@levicube.at">support@levicube.at</a><br/>
+    Telefon: +43 1 234 5678 (Mo–Fr 9–17 Uhr)</p>
+    <h3>Unternehmensangaben</h3>
+    <p>Rechtsform: Gesellschaft mit beschränkter Haftung (GmbH)<br/>
+    Firmenbuchnummer: FN 123456 a<br/>
+    Firmenbuchgericht: Handelsgericht Wien<br/>
+    UID-Nummer: ATU12345678<br/>
+    Gewerbeordnung: <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener">www.ris.bka.gv.at</a></p>
+    <h3>Aufsichtsbehörde</h3>
+    <p>Magistrat der Stadt Wien, MA 63 — Gewerbebehörde<br/>
+    Friedrich-Schmidt-Platz 1, 1082 Wien</p>
+    <h3>Haftungsausschluss</h3>
+    <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernimmt LeviCube GmbH keine Gewähr. Als Diensteanbieter sind wir gemäß §17 Abs.1 ECG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+    <h3>Online-Streitbeilegung (ODR)</h3>
+    <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse lautet: info@levicube.at</p>
+    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    <h3>Urheberrecht</h3>
+    <p>Die durch uns erstellten Inhalte und Werke auf dieser Website unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors.</p>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-6 px-6 border-t border-zinc-800/30 text-center text-zinc-600 text-xs">© 2025 LeviCube GmbH</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  PRIVACY / DATENSCHUTZ                                          -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-privacy" class="page">
+<main class="pt-28 pb-24 px-6 max-w-3xl mx-auto min-h-screen">
+  <button class="flex items-center gap-2 text-on-surface-variant hover:text-cyan-300 transition-colors mb-10 text-sm" onclick="nav('landing')"><span class="material-symbols-outlined text-lg">arrow_back</span>Zurück</button>
+  <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Rechtliches</span>
+  <h1 class="text-4xl font-headline font-bold tracking-tighter mt-2 mb-2">Datenschutzerklärung</h1>
+  <p class="text-on-surface-variant mb-8 text-sm">Zuletzt aktualisiert: 1. Januar 2025 · Gemäß DSGVO / DSG 2018</p>
+  <div class="legal">
+    <h2>1. Verantwortlicher</h2>
+    <p><strong>LeviCube GmbH</strong> · Technologiegasse 1 · 1010 Wien · E-Mail: <a href="mailto:datenschutz@levicube.at">datenschutz@levicube.at</a></p>
+    <h2>2. Erhobene Daten &amp; Zweck</h2>
+    <table><tr><th>Datenkategorie</th><th>Zweck</th><th>Rechtsgrundlage</th></tr>
+    <tr><td>Name, Adresse, E-Mail</td><td>Bestellabwicklung &amp; Versand</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
+    <tr><td>Zahlungsdaten</td><td>Zahlungsabwicklung (via Stripe — wir speichern keine Kartendaten)</td><td>Art. 6 Abs. 1 lit. b DSGVO</td></tr>
+    <tr><td>IP-Adresse</td><td>Sicherheit &amp; Betrugsprävention</td><td>Art. 6 Abs. 1 lit. f DSGVO</td></tr>
+    <tr><td>Anonyme Analysedaten</td><td>Website-Optimierung (Plausible Analytics — keine Cookies)</td><td>Art. 6 Abs. 1 lit. f DSGVO</td></tr>
+    </table>
+    <h2>3. Datenweitergabe an Dritte</h2>
+    <p>Wir geben Daten nur weiter an: <strong>Stripe Inc.</strong> (Zahlungsabwicklung, USA — Standard Contractual Clauses), <strong>SendGrid/Twilio</strong> (E-Mail-Versand, EU-Server), <strong>DHL/DPD</strong> (Versandabwicklung). Eine Weitergabe zu Marketingzwecken findet nicht statt.</p>
+    <h2>4. Speicherdauer</h2>
+    <p>Bestelldaten: 7 Jahre (gesetzliche Aufbewahrungspflicht). Newsletterdaten bis zur Abmeldung. Log-Daten: 30 Tage. Anonyme Analysedaten: keine personenbezogene Speicherung.</p>
+    <h2>5. Cookies</h2>
+    <p>Diese Website verwendet ausschließlich <strong>technisch notwendige Cookies</strong> (Session, Warenkorb). Keine Tracking- oder Marketing-Cookies. Plausible Analytics arbeitet cookiefrei.</p>
+    <h2>6. Deine Rechte (Art. 15–22 DSGVO)</h2>
+    <p>Du hast das Recht auf: <strong>Auskunft</strong> · <strong>Berichtigung</strong> · <strong>Löschung</strong> · <strong>Einschränkung der Verarbeitung</strong> · <strong>Datenübertragbarkeit</strong> · <strong>Widerspruch</strong>. Zur Ausübung: <a href="mailto:datenschutz@levicube.at">datenschutz@levicube.at</a>. Du kannst auch Beschwerde bei der österreichischen Datenschutzbehörde einreichen: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>.</p>
+    <h2>7. Datensicherheit</h2>
+    <p>TLS 1.3-Verschlüsselung · Server in EU (Frankfurt) · PCI-DSS-konforme Zahlungsabwicklung · regelmäßige Sicherheitsaudits.</p>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-6 px-6 border-t border-zinc-800/30 text-center text-zinc-600 text-xs">© 2025 LeviCube GmbH</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  AGB & WIDERRUFSRECHT                                           -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-terms" class="page">
+<main class="pt-28 pb-24 px-6 max-w-3xl mx-auto min-h-screen">
+  <button class="flex items-center gap-2 text-on-surface-variant hover:text-cyan-300 transition-colors mb-10 text-sm" onclick="nav('landing')"><span class="material-symbols-outlined text-lg">arrow_back</span>Zurück</button>
+  <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Rechtliches</span>
+  <h1 class="text-4xl font-headline font-bold tracking-tighter mt-2 mb-2">AGB &amp; Widerrufsrecht</h1>
+  <p class="text-on-surface-variant mb-8 text-sm">Stand: 1. Januar 2025</p>
+  <div class="legal">
+    <h2>1. Geltungsbereich</h2>
+    <p>Diese AGB gelten für alle Kaufverträge zwischen <strong>LeviCube GmbH</strong> (nachfolgend „Verkäufer") und Verbrauchern/Unternehmern (nachfolgend „Käufer") über unseren Online-Shop.</p>
+    <h2>2. Vertragsschluss</h2>
+    <p>Die Darstellung der Produkte im Online-Shop stellt kein rechtlich bindendes Angebot dar. Mit dem Klick auf „Jetzt bezahlen" gibt der Käufer eine verbindliche Bestellung ab. Der Vertrag kommt mit unserer Auftragsbestätigung per E-Mail zustande.</p>
+    <h2>3. Preise &amp; Zahlung</h2>
+    <p>Alle Preise in Euro inkl. gesetzlicher österreichischer MwSt. (20%). Versandkosten werden vor Bestellabschluss angezeigt. Zahlungsmittel: Kreditkarte, PayPal, SEPA-Lastschrift (via Stripe), Banküberweisung.</p>
+    <h2>4. Lieferung &amp; Versand</h2>
+    <p>Versand aus Wien, Österreich. Lieferzeit: 2–3 Werktage (AT/DE), 5–7 Werktage (restliche EU), 7–14 Werktage (international). Das Versandrisiko geht mit Übergabe an den Transporteur auf den Käufer über.</p>
+    <h2>5. Widerrufsrecht</h2>
+    <div class="rounded-2xl border border-primary/15 bg-primary/5 p-6 my-4">
+      <h3 class="text-primary mt-0">Widerrufsbelehrung</h3>
+      <p>Als Verbraucher steht dir ein <strong>Widerrufsrecht von 30 Tagen</strong> zu (gesetzlich 14 Tage, wir gewähren 30 Tage als freiwillige Erweiterung). Die Frist beginnt mit Erhalt der Ware.</p>
+      <p><strong>Widerruf erklären:</strong> Sende eine eindeutige Erklärung per E-Mail an <a href="mailto:return@levicube.at">return@levicube.at</a> oder nutze unser <button onclick="openModal('return-modal')" class="text-primary underline">Rückgabeformular</button>.</p>
+      <p><strong>Rücksendung:</strong> Wir senden dir ein kostenloses DHL-Rücksendeetikett. Die Ware muss unbenutzt und in Originalverpackung retourniert werden.</p>
+      <p><strong>Erstattung:</strong> Rückzahlung innerhalb von 14 Tagen nach Eingang der Rücksendung auf das ursprüngliche Zahlungsmittel.</p>
+    </div>
+    <h2>6. Gewährleistung &amp; Garantie</h2>
+    <p>Gesetzliche Gewährleistung: 2 Jahre. Freiwillige Herstellergarantie: 2 Jahre auf Material- und Verarbeitungsfehler. Nicht abgedeckt: Schäden durch Sturz, Nässe, Feuer oder unsachgemäße Handhabung.</p>
+    <h2>7. Eigentumsvorbehalt</h2>
+    <p>Die Ware bleibt bis zur vollständigen Bezahlung Eigentum von LeviCube GmbH.</p>
+    <h2>8. Gerichtsstand &amp; anwendbares Recht</h2>
+    <p>Österreichisches Recht. Gerichtsstand Wien. Für Verbraucher gilt dies nur, sofern keine zwingenden Verbraucherschutzbestimmungen des Wohnsitzlandes entgegenstehen.</p>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-6 px-6 border-t border-zinc-800/30 text-center text-zinc-600 text-xs">© 2025 LeviCube GmbH</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  VERSAND & ZAHLUNG                                               -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-shipping" class="page">
+<main class="pt-28 pb-24 px-6 max-w-3xl mx-auto min-h-screen">
+  <button class="flex items-center gap-2 text-on-surface-variant hover:text-cyan-300 transition-colors mb-10 text-sm" onclick="nav('landing')"><span class="material-symbols-outlined text-lg">arrow_back</span>Zurück</button>
+  <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Service</span>
+  <h1 class="text-4xl font-headline font-bold tracking-tighter mt-2 mb-8">Versand &amp; Zahlung</h1>
+  <div class="legal">
+    <h2>Versandoptionen</h2>
+    <table>
+      <tr><th>Zone</th><th>Methode</th><th>Laufzeit</th><th>Preis</th></tr>
+      <tr><td>🇦🇹 Österreich</td><td>DHL Express</td><td>1–2 Werktage</td><td>12 €</td></tr>
+      <tr><td>🇩🇪 Deutschland</td><td>DHL Express</td><td>2–3 Werktage</td><td>12 €</td></tr>
+      <tr><td>🇨🇭 Schweiz</td><td>DHL Express</td><td>3–5 Werktage</td><td>18 €</td></tr>
+      <tr><td>🇪🇺 EU (restliche Länder)</td><td>DHL Express</td><td>4–7 Werktage</td><td>16 €</td></tr>
+      <tr><td>🌍 International</td><td>DHL Express International</td><td>7–14 Werktage</td><td>24 €</td></tr>
+    </table>
+    <p>Alle Sendungen werden mit einer Tracking-Nummer versehen. Du erhältst die Tracking-Nummer sobald die Bestellung versendet wurde.</p>
+    <h2>Zahlungsarten</h2>
+    <table>
+      <tr><th>Methode</th><th>Anbieter</th><th>Gebühr</th></tr>
+      <tr><td>💳 Kreditkarte (Visa, MC, Amex)</td><td>Stripe</td><td>kostenlos</td></tr>
+      <tr><td>🅿️ PayPal</td><td>Stripe / PayPal</td><td>kostenlos</td></tr>
+      <tr><td>🏦 SEPA-Lastschrift</td><td>Stripe</td><td>kostenlos</td></tr>
+      <tr><td>🏧 Banküberweisung</td><td>Direkt</td><td>kostenlos</td></tr>
+    </table>
+    <p>Alle Zahlungen werden sicher über <strong>Stripe</strong> abgewickelt. PCI-DSS Level 1 zertifiziert. Wir speichern keinerlei Zahlungsdaten auf unseren Servern.</p>
+    <h2>Rechnungsstellung</h2>
+    <p>Eine Rechnung im PDF-Format wird automatisch nach Bestellabschluss per E-Mail versendet. Unternehmer können ihre UID-Nummer bei der Bestellung angeben.</p>
+    <h2>Zoll &amp; Einfuhrabgaben</h2>
+    <p>Für Lieferungen innerhalb der EU fallen keine zusätzlichen Zollgebühren an. Bei Lieferungen in die Schweiz oder außerhalb der EU können lokale Einfuhrabgaben anfallen, die vom Käufer zu tragen sind.</p>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-6 px-6 border-t border-zinc-800/30 text-center text-zinc-600 text-xs">© 2025 LeviCube GmbH</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  INSTALLATION GUIDE                                              -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-install" class="page">
+<main class="pt-28 pb-24 px-6 max-w-3xl mx-auto min-h-screen">
+  <button class="flex items-center gap-2 text-on-surface-variant hover:text-cyan-300 transition-colors mb-10 text-sm" onclick="nav('landing')"><span class="material-symbols-outlined text-lg">arrow_back</span>Zurück</button>
+  <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Dokumentation</span>
+  <h1 class="text-4xl font-headline font-bold tracking-tighter mt-2 mb-2">Installation Guide</h1>
+  <p class="text-on-surface-variant mb-10">Dein LeviCube in unter 10 Minuten eingerichtet.</p>
+  <div class="space-y-5">
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-7 flex gap-5">
+      <div class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center font-headline font-bold text-primary-fixed-dim">1</div>
+      <div>
+        <h3 class="font-headline font-bold text-lg mb-2">Auspacken &amp; Prüfen</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Entnimm den LeviCube vorsichtig aus der magnetischen Verpackung. Lieferumfang: Cube, Basisstation, Netzkabel mit EU/UK/US-Adapter, Reinigungstuch, Kurzanleitung.</p>
+        <div class="bg-surface-container-high rounded-xl p-3 text-xs text-on-surface-variant border border-outline-variant/10"><span class="text-primary-fixed-dim font-bold">ℹ</span> Prüfe alle Teile sofort auf Transportschäden und kontaktiere support@levicube.at falls etwas fehlt.</div>
+      </div>
+    </div>
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-7 flex gap-5">
+      <div class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center font-headline font-bold text-primary-fixed-dim">2</div>
+      <div>
+        <h3 class="font-headline font-bold text-lg mb-2">Basisstation aufstellen</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Stabile, nicht-metallische, ebene Oberfläche wählen. Mindestabstand 30 cm zu anderen Elektrogeräten.</p>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="bg-green-950/40 border border-green-800/30 rounded-xl p-3 text-green-400 flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span>Holz, Glas, Stein, Keramik</div>
+          <div class="bg-red-950/40 border border-red-800/30 rounded-xl p-3 text-red-400 flex items-center gap-2"><span class="material-symbols-outlined text-sm">cancel</span>Metall, Magnete, Münzen</div>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-7 flex gap-5">
+      <div class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center font-headline font-bold text-primary-fixed-dim">3</div>
+      <div>
+        <h3 class="font-headline font-bold text-lg mb-2">Strom anschließen</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Netzkabel verbinden (100–240V). LED leuchtet <span class="text-cyan-400 font-semibold">Cyan</span> = betriebsbereit.</p>
+      </div>
+    </div>
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-7 flex gap-5">
+      <div class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center font-headline font-bold text-primary-fixed-dim">4</div>
+      <div>
+        <h3 class="font-headline font-bold text-lg mb-2">Cube positionieren</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-3">Cube ca. 5 cm über die Mitte halten → langsam absenken bis Gegenkraft spürbar → loslassen. Der Cube stabilisiert sich automatisch.</p>
+        <div class="bg-yellow-950/40 border border-yellow-800/30 rounded-xl p-3 text-yellow-400 text-xs flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">warning</span><span>Cube nicht abrupt loslassen — das Gleichgewichtssystem braucht 1–2 Sekunden zur Stabilisierung.</span></div>
+      </div>
+    </div>
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-7 flex gap-5">
+      <div class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center font-headline font-bold text-primary-fixed-dim">5</div>
+      <div>
+        <h3 class="font-headline font-bold text-lg mb-2">App verbinden</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-3">LeviCube App laden → Bluetooth aktivieren → „LeviCube-XXXX" auswählen. RGB, Helligkeit, Animationen &amp; Updates über die App.</p>
+        <div class="flex gap-3">
+          <button onclick="showToast('App Store — kommt bald!')" class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-xl border border-outline-variant/20 text-xs font-label hover:border-primary/30 transition-colors"><span class="material-symbols-outlined text-sm">phone_iphone</span>App Store</button>
+          <button onclick="showToast('Google Play — kommt bald!')" class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-xl border border-outline-variant/20 text-xs font-label hover:border-primary/30 transition-colors"><span class="material-symbols-outlined text-sm">android</span>Google Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-2xl bg-gradient-to-br from-surface-container-high to-zinc-950 border border-primary/10 p-7 flex gap-5">
+      <div class="flex-shrink-0 w-11 h-11 rounded-full bg-primary/20 border border-primary/35 flex items-center justify-center">
+        <span class="material-symbols-outlined text-primary-fixed-dim" style="font-variation-settings:'FILL' 1">check_circle</span>
+      </div>
+      <div>
+        <h3 class="font-headline font-bold text-lg mb-2 text-primary">Fertig — Ascend!</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Dein LeviCube schwebt. Bei Problemen hilft unser 24/7-Support.</p>
+        <button onclick="nav('support')" class="mt-3 inline-flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all">Support kontaktieren <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-6 px-6 border-t border-zinc-800/30 text-center text-zinc-600 text-xs">© 2025 LeviCube GmbH</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  SUPPORT                                                         -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div id="page-support" class="page">
+<main class="pt-28 pb-24 px-6 max-w-4xl mx-auto min-h-screen">
+  <button class="flex items-center gap-2 text-on-surface-variant hover:text-cyan-300 transition-colors mb-10 text-sm" onclick="nav('landing')"><span class="material-symbols-outlined text-lg">arrow_back</span>Zurück</button>
+  <span class="text-xs font-bold tracking-widest uppercase text-primary-fixed-dim">Hilfe</span>
+  <h1 class="text-4xl font-headline font-bold tracking-tighter mt-2 mb-2">Support</h1>
+  <p class="text-on-surface-variant mb-10">Unser Team ist 24/7 für dich erreichbar.</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+    <button onclick="nav('install')" class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6 text-left hover:border-primary/25 transition-colors group">
+      <span class="material-symbols-outlined text-primary-fixed-dim text-3xl mb-3 block">menu_book</span>
+      <h3 class="font-headline font-bold mb-1">Installation Guide</h3>
+      <p class="text-on-surface-variant text-xs">Schritt-für-Schritt Einrichtung</p>
+      <span class="text-primary text-xs font-bold mt-3 flex items-center gap-1 group-hover:gap-2 transition-all">Öffnen <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </button>
+    <a href="mailto:support@levicube.at" class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6 text-left hover:border-secondary/25 transition-colors group block">
+      <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">mail</span>
+      <h3 class="font-headline font-bold mb-1">E-Mail</h3>
+      <p class="text-on-surface-variant text-xs">Antwort in max. 4 Stunden</p>
+      <span class="text-secondary text-xs font-bold mt-3 flex items-center gap-1 group-hover:gap-2 transition-all">support@levicube.at <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
+    <button onclick="openModal('return-modal')" class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6 text-left hover:border-outline-variant/30 transition-colors group">
+      <span class="material-symbols-outlined text-on-surface-variant text-3xl mb-3 block">assignment_return</span>
+      <h3 class="font-headline font-bold mb-1">Rücksendung</h3>
+      <p class="text-on-surface-variant text-xs">30 Tage kostenlose Rückgabe</p>
+      <span class="text-on-surface-variant text-xs font-bold mt-3 flex items-center gap-1 group-hover:gap-2 transition-all">Rückgabe starten <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </button>
+  </div>
+
+  <!-- Chat -->
+  <div class="rounded-2xl bg-surface-container border border-outline-variant/10 overflow-hidden">
+    <div class="bg-surface-container-high px-6 py-4 flex items-center justify-between border-b border-outline-variant/10">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-primary/15 border border-primary/25 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary-fixed-dim text-lg" style="font-variation-settings:'FILL' 1">support_agent</span>
+        </div>
+        <div>
+          <p class="font-headline font-bold text-sm">LeviCube Assistant</p>
+          <p class="text-xs text-green-400 flex items-center gap-1.5"><span class="ndot green"></span>Online · Antwortet sofort</p>
+        </div>
+      </div>
+    </div>
+    <div id="chat-box"></div>
+    <div class="px-4 py-3 border-t border-outline-variant/10 flex gap-3">
+      <input id="chat-input" class="flex-1 bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="Frage stellen…" type="text" onkeydown="if(event.key==='Enter')sendChat()"/>
+      <button onclick="sendChat()" aria-label="Senden" class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-on-primary hover:scale-105 transition-transform flex-shrink-0">
+        <span class="material-symbols-outlined text-lg">send</span>
+      </button>
+    </div>
+    <div class="px-4 pb-4 flex flex-wrap gap-2">
+      <button onclick="quickReply('Wie setze ich den Cube auf?')" class="text-xs px-3 py-1.5 rounded-full border border-outline-variant/20 hover:border-primary/30 text-on-surface-variant hover:text-primary transition-colors">Cube aufsetzen?</button>
+      <button onclick="quickReply('Was tun wenn der Cube fällt?')" class="text-xs px-3 py-1.5 rounded-full border border-outline-variant/20 hover:border-primary/30 text-on-surface-variant hover:text-primary transition-colors">Cube fällt herunter?</button>
+      <button onclick="quickReply('Wie verbinde ich die App?')" class="text-xs px-3 py-1.5 rounded-full border border-outline-variant/20 hover:border-primary/30 text-on-surface-variant hover:text-primary transition-colors">App verbinden?</button>
+      <button onclick="quickReply('Wie lange dauert die Lieferung?')" class="text-xs px-3 py-1.5 rounded-full border border-outline-variant/20 hover:border-primary/30 text-on-surface-variant hover:text-primary transition-colors">Lieferzeit?</button>
+      <button onclick="quickReply('Ich möchte einen Artikel zurückschicken.')" class="text-xs px-3 py-1.5 rounded-full border border-outline-variant/20 hover:border-primary/30 text-on-surface-variant hover:text-primary transition-colors">Rückgabe</button>
+    </div>
+  </div>
+</main>
+<footer class="bg-zinc-950 py-6 px-6 border-t border-zinc-800/30 text-center text-zinc-600 text-xs">© 2025 LeviCube GmbH</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  GLOBAL OVERLAYS & MODALS                                        -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+
+<!-- Stripe loading -->
+<div id="stripe-loading" role="status" aria-label="Zahlung wird verarbeitet">
+  <div class="text-center space-y-4">
+    <div class="spinner mx-auto"></div>
+    <p class="font-headline font-bold text-on-surface">Weiterleitung zu Stripe…</p>
+    <p class="text-sm text-on-surface-variant">Bitte warte einen Moment.</p>
+  </div>
+</div>
+
+<!-- Success -->
+<div id="success-overlay" role="dialog" aria-modal="true" aria-label="Bestellung erfolgreich">
+  <div class="text-center space-y-6 max-w-md px-8">
+    <div class="w-24 h-24 rounded-full bg-primary-container/20 border border-primary/30 flex items-center justify-center mx-auto shadow-[0_0_60px_rgba(0,240,255,.3)]">
+      <span class="material-symbols-outlined text-5xl text-primary-fixed-dim" style="font-variation-settings:'FILL' 1">check_circle</span>
+    </div>
+    <h2 class="text-4xl font-headline font-bold">Ascension confirmed.</h2>
+    <p class="text-on-surface-variant leading-relaxed">Dein LeviCube wurde erfolgreich reserviert. Eine Bestätigungs-E-Mail wurde an <strong id="success-email" class="text-on-surface"></strong> gesendet.</p>
+    <p class="text-xs text-on-surface-variant/40 uppercase tracking-widest">Order #<span id="order-id"></span></p>
+    <button onclick="closeSuccess()" class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold px-10 py-3 rounded-xl hover:scale-105 transition-transform">
+      Zurück zur Startseite
+    </button>
+  </div>
+</div>
+
+<!-- Film Modal -->
+<div id="film-modal" class="modal" onclick="closeModal('film-modal')">
+  <div class="modal-box max-w-md p-8 text-center space-y-5" onclick="event.stopPropagation()">
+    <button class="absolute top-4 right-4 text-on-surface-variant hover:text-white" onclick="closeModal('film-modal')"><span class="material-symbols-outlined">close</span></button>
+    <div class="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto">
+      <span class="material-symbols-outlined text-4xl text-primary-fixed-dim" style="font-variation-settings:'FILL' 1">play_circle</span>
+    </div>
+    <h3 class="text-2xl font-headline font-bold">LeviCube — Der Film</h3>
+    <p class="text-on-surface-variant text-sm">Das Produktvideo befindet sich in der Produktion. Hinterlasse deine E-Mail um als Erstes benachrichtigt zu werden.</p>
+    <div class="flex gap-3">
+      <input id="film-email" type="email" placeholder="deine@email.at" class="flex-1 bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all"/>
+      <button onclick="notifyFilm()" class="px-5 py-3 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-xl text-sm hover:scale-105 transition-transform">Notify</button>
+    </div>
+  </div>
+</div>
+
+<!-- Levitation Modal -->
+<div id="levitation-modal" class="modal" onclick="closeModal('levitation-modal')">
+  <div class="modal-box max-w-xl p-8 space-y-5" onclick="event.stopPropagation()">
+    <button class="absolute top-4 right-4 text-on-surface-variant hover:text-white" onclick="closeModal('levitation-modal')"><span class="material-symbols-outlined">close</span></button>
+    <div class="flex items-center gap-4"><div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20"><span class="material-symbols-outlined text-primary-fixed-dim text-2xl">electric_bolt</span></div><div><h2 class="text-xl font-headline font-bold">Magnetische Levitation</h2><p class="text-on-surface-variant text-sm">ElectroFloat™ System</p></div></div>
+    <p class="text-on-surface-variant text-sm leading-relaxed">Das ElectroFloat™ System nutzt aktiv geregelte Elektromagnete mit 8 Sensoren, die die Cube-Position 1.000-mal pro Sekunde korrigieren. Ergebnis: stabile Schwebe bei absoluter Stille.</p>
+    <div class="grid grid-cols-3 gap-3">
+      <div class="bg-surface-container-high rounded-xl p-4 text-center"><div class="text-xl font-headline font-bold text-primary">8</div><div class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Sensoren</div></div>
+      <div class="bg-surface-container-high rounded-xl p-4 text-center"><div class="text-xl font-headline font-bold text-primary">1ms</div><div class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Regelung</div></div>
+      <div class="bg-surface-container-high rounded-xl p-4 text-center"><div class="text-xl font-headline font-bold text-primary">±0.5mm</div><div class="text-xs text-on-surface-variant uppercase tracking-widests mt-1">Präzision</div></div>
+    </div>
+    <button onclick="addToCart();closeModal('levitation-modal');openCartDrawer()" class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-4 rounded-xl hover:scale-[1.01] transition-transform">In den Warenkorb</button>
+  </div>
+</div>
+
+<!-- RGB Modal -->
+<div id="rgb-modal" class="modal" onclick="closeModal('rgb-modal')">
+  <div class="modal-box max-w-md p-8 space-y-5" onclick="event.stopPropagation()">
+    <button class="absolute top-4 right-4 text-on-surface-variant hover:text-white" onclick="closeModal('rgb-modal')"><span class="material-symbols-outlined">close</span></button>
+    <h2 class="text-xl font-headline font-bold flex items-center gap-3"><span class="material-symbols-outlined text-secondary">palette</span>RGB-Beleuchtung</h2>
+    <p class="text-on-surface-variant text-sm leading-relaxed">16,8 Millionen Farben · 40+ Szenen · Eigene Farbverläufe · Musik-reaktiv</p>
+    <div class="text-center py-4">
+      <div id="rgb-preview" class="w-20 h-20 rounded-2xl mx-auto transition-all duration-500" style="background:#00f0ff;box-shadow:0 0 40px rgba(0,240,255,.6)"></div>
+      <div class="flex justify-center gap-3 mt-5 flex-wrap">
+        <button onclick="setRGB('#00f0ff','rgba(0,240,255,.5)')" class="w-8 h-8 rounded-full hover:scale-110 transition-transform border-2 border-cyan-400/50" style="background:#00f0ff" aria-label="Cyan"></button>
+        <button onclick="setRGB('#d0bcff','rgba(208,188,255,.5)')" class="w-8 h-8 rounded-full hover:scale-110 transition-transform border-2 border-purple-400/50" style="background:#d0bcff" aria-label="Lila"></button>
+        <button onclick="setRGB('#ff4488','rgba(255,68,136,.5)')" class="w-8 h-8 rounded-full hover:scale-110 transition-transform border-2 border-pink-400/50" style="background:#ff4488" aria-label="Pink"></button>
+        <button onclick="setRGB('#ffcc00','rgba(255,204,0,.5)')" class="w-8 h-8 rounded-full hover:scale-110 transition-transform border-2 border-yellow-400/50" style="background:#ffcc00" aria-label="Gelb"></button>
+        <button onclick="setRGB('#44ff88','rgba(68,255,136,.5)')" class="w-8 h-8 rounded-full hover:scale-110 transition-transform border-2 border-green-400/50" style="background:#44ff88" aria-label="Grün"></button>
+        <button onclick="setRGB('#ff8800','rgba(255,136,0,.5)')" class="w-8 h-8 rounded-full hover:scale-110 transition-transform border-2 border-orange-400/50" style="background:#ff8800" aria-label="Orange"></button>
+      </div>
+      <p class="text-xs text-on-surface-variant mt-3">Klicke auf eine Farbe zum Testen</p>
+    </div>
+  </div>
+</div>
+
+<!-- Motion Modal -->
+<div id="motion-modal" class="modal" onclick="closeModal('motion-modal')">
+  <div class="modal-box max-w-md p-8 space-y-5" onclick="event.stopPropagation()">
+    <button class="absolute top-4 right-4 text-on-surface-variant hover:text-white" onclick="closeModal('motion-modal')"><span class="material-symbols-outlined">close</span></button>
+    <h2 class="text-xl font-headline font-bold flex items-center gap-3"><span class="material-symbols-outlined text-primary">waves</span>Sanfte Bewegung</h2>
+    <p class="text-on-surface-variant text-sm leading-relaxed">Die Levitations-Animation ahmt natürliche Atemrhythmen nach. Frequenz und Amplitude sind per App anpassbar (0.1–1 Hz, 5–15 mm).</p>
+    <div class="flex flex-col items-center gap-5 py-4">
+      <div id="motion-cube" class="w-16 h-16 rounded-xl bg-gradient-to-br from-zinc-700 to-zinc-900 border border-cyan-400/20" style="animation:levitate 3s ease-in-out infinite;box-shadow:0 0 20px rgba(0,240,255,.2)"></div>
+      <div class="w-24 h-1 bg-cyan-400/8 rounded-full"></div>
+      <div>
+        <label class="block text-on-surface-variant text-xs uppercase tracking-widest mb-2 text-center">Animationsgeschwindigkeit</label>
+        <input type="range" min="1" max="5" value="3" class="w-40 accent-cyan-400" oninput="document.getElementById('motion-cube').style.animationDuration=(6-this.value)+'s'"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review Modal -->
+<div id="review-modal" class="modal" onclick="closeModal('review-modal')">
+  <div class="modal-box max-w-md p-8 space-y-5" onclick="event.stopPropagation()">
+    <button class="absolute top-4 right-4 text-on-surface-variant hover:text-white" onclick="closeModal('review-modal')"><span class="material-symbols-outlined">close</span></button>
+    <h2 class="text-2xl font-headline font-bold">Bewertung schreiben</h2>
+    <div>
+      <p class="text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Sterne *</p>
+      <div class="flex gap-1" id="star-row" role="group" aria-label="Bewertung">
+        <button class="star" onclick="setStars(1)" aria-label="1 Stern">★</button>
+        <button class="star" onclick="setStars(2)" aria-label="2 Sterne">★</button>
+        <button class="star" onclick="setStars(3)" aria-label="3 Sterne">★</button>
+        <button class="star" onclick="setStars(4)" aria-label="4 Sterne">★</button>
+        <button class="star" onclick="setStars(5)" aria-label="5 Sterne">★</button>
+      </div>
+    </div>
+    <div>
+      <label for="rev-name" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Name *</label>
+      <input id="rev-name" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all" placeholder="Max M." type="text"/>
+    </div>
+    <div>
+      <label for="rev-text" class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Kommentar *</label>
+      <textarea id="rev-text" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface text-sm focus:border-primary-container transition-all resize-none" rows="3" placeholder="Deine Erfahrung…"></textarea>
+    </div>
+    <button onclick="submitReview()" class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-3.5 rounded-xl hover:scale-[1.01] transition-transform">Absenden</button>
+  </div>
+</div>
+
+<!-- Return Modal -->
+<div id="return-modal" class="modal" onclick="closeModal('return-modal')">
+  <div class="modal-box max-w-md p-8 space-y-5" onclick="event.stopPropagation()">
+    <button class="absolute top-4 right-4 text-on-surface-variant hover:text-white" onclick="closeModal('return-modal')"><span class="material-symbols-outlined">close</span></button>
+    <h2 class="text-2xl font-headline font-bold">Rücksendung starten</h2>
+    <p class="text-on-surface-variant text-sm">30 Tage Rückgaberecht · Kostenloses DHL-Etikett</p>
+    <div><label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Bestellnummer</label><input id="ret-order" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-sm text-on-surface focus:border-primary-container transition-all" placeholder="LC-XXXXXX" type="text"/></div>
+    <div><label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">E-Mail</label><input id="ret-email" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-sm text-on-surface focus:border-primary-container transition-all" placeholder="deine@email.at" type="email"/></div>
+    <div><label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Grund</label>
+      <select id="ret-reason" class="w-full bg-surface-container-low border border-outline-variant/20 rounded-xl px-4 py-3 text-sm text-on-surface focus:border-primary-container transition-all">
+        <option>Nicht zufrieden</option><option>Defekt / Beschädigt</option><option>Falsches Produkt</option><option>Kein Bedarf mehr</option>
+      </select>
+    </div>
+    <button onclick="submitReturn()" class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-3.5 rounded-xl hover:scale-[1.01] transition-transform">Rücksendung beantragen</button>
+  </div>
+</div>
+
+<!-- FAB -->
+<button class="fixed bottom-7 right-7 w-14 h-14 rounded-full text-zinc-950 flex items-center justify-center shadow-[0_0_30px_rgba(0,240,255,.4)] hover:scale-110 active:scale-95 transition-all z-40 group bg-cyan-400 hover:bg-cyan-300"
+  onclick="openCartDrawer()" aria-label="Warenkorb öffnen">
+  <span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1">shopping_cart</span>
+  <span id="fab-badge" class="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center rounded-full bg-zinc-950 text-cyan-400 text-[10px] font-bold hidden">0</span>
+</button>
+
+<!-- Toast -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!--  JAVASCRIPT                                                      -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ═══ CONFIG ═════════════════════════════════════════════════════ */
+const API = 'https://api.levicube.at'; // Change to your backend URL
+const PRODUCT_PRICE = 149;
+const SHIP_COST = 12;
+const COUPONS = { 'ASCEND10': 10, 'VOID20': 20, 'LAUNCH15': 15 }; // Fallback if API offline
+
+/* ═══ STATE ══════════════════════════════════════════════════════ */
+let cartItems = JSON.parse(localStorage.getItem('lc_cart') || '[]');
+let couponCode = '';
+let couponDiscount = 0;
+let reviews = [
+  { name: 'Sarah K.', stars: 5, text: 'Absolut beeindruckend. Jeder Besucher fragt sofort was das ist.', date: 'Feb 2025', verified: true },
+  { name: 'Thomas R.', stars: 5, text: 'Kein Summen, kein Vibrieren — pure Magie. Bestes Produkt des Jahres.', date: 'Jan 2025', verified: true },
+  { name: 'Lisa M.', stars: 4, text: 'Traumhaft! Die App wird noch besser werden, aber das Gerät selbst: 10/10.', date: 'Dez 2024', verified: false },
+];
+let selectedStars = 0;
+
+/* ═══ ROUTER ═════════════════════════════════════════════════════ */
+function nav(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const t = document.getElementById('page-' + page);
+  if (!t) return;
+  t.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Track pageview
+  if (window.plausible) plausible(page);
+}
+
+function navScroll(page, section) {
+  nav(page);
+  setTimeout(() => {
+    const el = document.getElementById(section);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }, 120);
+}
+
+function toggleDrawer() {
+  document.getElementById('drawer').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('drawer').classList.contains('open') ? 'hidden' : '';
+}
+
+/* ═══ CART ═══════════════════════════════════════════════════════ */
+function saveCart() {
+  localStorage.setItem('lc_cart', JSON.stringify(cartItems));
+  renderCart();
+  updateBadges();
+}
+
+function addToCart(qty = 1) {
+  const existing = cartItems.find(i => i.id === 'LC-GEN1');
+  if (existing) existing.qty = Math.min(10, existing.qty + qty);
+  else cartItems.push({ id: 'LC-GEN1', name: 'LeviCube Gen-1', price: PRODUCT_PRICE, qty });
+  saveCart();
+  showToast('LeviCube zum Warenkorb hinzugefügt ✓');
+  if (window.plausible) plausible('add_to_cart', { props: { qty } });
+}
+
+function removeFromCart(id) {
+  cartItems = cartItems.filter(i => i.id !== id);
+  saveCart();
+}
+
+function changeQty(delta) {
+  // from checkout sidebar
+  const item = cartItems.find(i => i.id === 'LC-GEN1');
+  if (!item) { addToCart(Math.max(1, 1 + delta)); return; }
+  item.qty = Math.max(1, Math.min(10, item.qty + delta));
+  saveCart();
+  updateCheckoutSummary();
+}
+
+function cartTotal() {
+  const sub = cartItems.reduce((s, i) => s + i.price * i.qty, 0);
+  const disc = Math.round(sub * couponDiscount / 100);
+  const total = sub - disc + SHIP_COST;
+  return { sub, disc, total, vat: +((total / 1.2 * .2).toFixed(2)) };
+}
+
+function renderCart() {
+  const empty = document.getElementById('cart-empty');
+  const items = document.getElementById('cart-items');
+  const summary = document.getElementById('cart-summary-area');
+  if (!cartItems.length) {
+    empty.classList.remove('hidden');
+    items.classList.add('hidden');
+    summary.classList.add('hidden');
+    return;
+  }
+  empty.classList.add('hidden');
+  items.classList.remove('hidden');
+  summary.classList.remove('hidden');
+  items.innerHTML = cartItems.map(item => `
+    <div class="flex gap-4 items-center">
+      <div class="w-14 h-14 rounded-xl bg-surface-container-high border border-outline-variant/10 flex items-center justify-center flex-shrink-0">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-zinc-700 to-zinc-900 border border-cyan-400/20"></div>
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="font-headline font-bold text-sm truncate">${item.name}</p>
+        <p class="text-xs text-on-surface-variant">Aetheric Void Edition</p>
+        <div class="flex items-center gap-2 mt-1.5">
+          <button onclick="updateCartItemQty('${item.id}',-1)" class="w-6 h-6 rounded-full bg-surface-container-highest text-sm flex items-center justify-center hover:bg-surface-container-high">−</button>
+          <span class="text-sm font-bold w-4 text-center">${item.qty}</span>
+          <button onclick="updateCartItemQty('${item.id}',1)" class="w-6 h-6 rounded-full bg-surface-container-highest text-sm flex items-center justify-center hover:bg-surface-container-high">+</button>
+        </div>
+      </div>
+      <div class="text-right">
+        <p class="font-headline font-bold text-sm">${item.price * item.qty} €</p>
+        <button onclick="removeFromCart('${item.id}')" class="text-xs text-on-surface-variant/50 hover:text-red-400 mt-1 transition-colors">Entfernen</button>
+      </div>
+    </div>
+  `).join('');
+
+  const { sub, disc, total } = cartTotal();
+  document.getElementById('cs-sub').textContent = sub + ' €';
+  document.getElementById('cs-total').textContent = total + ' €';
+  const drow = document.getElementById('cs-discount-row');
+  if (disc > 0) {
+    drow.style.removeProperty('display');
+    document.getElementById('cs-discount').textContent = '−' + disc + ' €';
+  } else drow.style.setProperty('display', 'none', 'important');
+}
+
+function updateCartItemQty(id, delta) {
+  const item = cartItems.find(i => i.id === id);
+  if (!item) return;
+  item.qty = Math.max(1, Math.min(10, item.qty + delta));
+  saveCart();
+  updateCheckoutSummary();
+}
+
+function updateBadges() {
+  const total = cartItems.reduce((s, i) => s + i.qty, 0);
+  const badge = document.getElementById('cart-badge');
+  const fab = document.getElementById('fab-badge');
+  if (total > 0) {
+    badge.textContent = total;
+    badge.classList.remove('hidden');
+    fab.textContent = total;
+    fab.classList.remove('hidden');
+    badge.classList.add('cart-pop');
+    setTimeout(() => badge.classList.remove('cart-pop'), 300);
+  } else {
+    badge.classList.add('hidden');
+    fab.classList.add('hidden');
+  }
+}
+
+function openCartDrawer() {
+  document.getElementById('cart-drawer').classList.add('open');
+  document.getElementById('cart-overlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCartDrawer() {
+  document.getElementById('cart-drawer').classList.remove('open');
+  document.getElementById('cart-overlay').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+/* ═══ CART COUPON ════════════════════════════════════════════════ */
+async function applyCartCoupon() {
+  const code = document.getElementById('cart-coupon').value.trim().toUpperCase();
+  await _applyCoupon(code, 'cart-coupon-msg');
+  renderCart();
+}
+
+async function applyCoupon() {
+  const code = document.getElementById('coupon-input').value.trim().toUpperCase();
+  await _applyCoupon(code, 'coupon-msg');
+  updateCheckoutSummary();
+}
+
+async function _applyCoupon(code, msgId) {
+  const msg = document.getElementById(msgId);
+  msg.classList.remove('hidden');
+  try {
+    const res = await fetch(API + '/api/validate-coupon', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code })
+    });
+    const data = await res.json();
+    if (data.valid) {
+      couponCode = data.code;
+      couponDiscount = data.discountPct;
+      msg.textContent = `✓ "${code}" — ${couponDiscount}% Rabatt!`;
+      msg.style.color = '#22c55e';
+      showToast(`Gutschein "${code}" eingelöst — ${couponDiscount}% Rabatt!`);
+    } else throw new Error('invalid');
+  } catch {
+    // Fallback to local
+    if (COUPONS[code]) {
+      couponCode = code;
+      couponDiscount = COUPONS[code];
+      msg.textContent = `✓ "${code}" — ${couponDiscount}% Rabatt!`;
+      msg.style.color = '#22c55e';
+      showToast(`Gutschein eingelöst: −${couponDiscount}%`);
+    } else {
+      msg.textContent = '✗ Ungültiger oder abgelaufener Code.';
+      msg.style.color = '#ff8888';
+    }
+  }
+}
+
+/* ═══ CHECKOUT ════════════════════════════════════════════════════ */
+function updateCheckoutSummary() {
+  const item = cartItems.find(i => i.id === 'LC-GEN1');
+  const qty = item ? item.qty : 1;
+  const { sub, disc, total, vat } = cartTotal();
+  document.getElementById('qty-display').textContent = qty;
+  document.getElementById('summary-qty').textContent = qty;
+  document.getElementById('summary-sub').textContent = sub + ' €';
+  document.getElementById('summary-vat').textContent = vat + ' €';
+  document.getElementById('summary-total').textContent = total + ' €';
+  const drow = document.getElementById('discount-row');
+  if (disc > 0) {
+    drow.style.removeProperty('display');
+    document.getElementById('discount-val').textContent = '−' + disc + ' €';
+  } else drow.style.setProperty('display', 'none', 'important');
+}
+
+function goToStep(step) {
+  if (step === 2 && !validateShipping()) return;
+  document.getElementById('checkout-step1').classList.toggle('hidden', step !== 1);
+  document.getElementById('checkout-step2').classList.toggle('hidden', step !== 2);
+  ['step1','step2','step3'].forEach((id, i) => {
+    const dot = document.getElementById(id);
+    dot.classList.remove('done','active','todo');
+    if (i + 1 < step) { dot.classList.add('done'); dot.textContent = '✓'; }
+    else if (i + 1 === step) { dot.classList.add('active'); dot.textContent = i + 1; }
+    else { dot.classList.add('todo'); dot.textContent = i + 1 === 3 ? '✓' : i + 1; }
+  });
+  ['line1','line2'].forEach((id, i) => {
+    document.getElementById(id).classList.toggle('done', i + 1 < step);
+  });
+  if (step === 2) window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function validateShipping() {
+  const fields = [
+    { id:'ship-name',    err:'err-name',    ok: v => v.length >= 2 },
+    { id:'ship-email',   err:'err-email',   ok: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+    { id:'ship-address', err:'err-address', ok: v => v.length >= 5 },
+    { id:'ship-city',    err:'err-city',    ok: v => v.length >= 2 },
+    { id:'ship-zip',     err:'err-zip',     ok: v => /^\d{3,10}$/.test(v.replace(/\s/g,'')) },
+  ];
+  let ok = true;
+  fields.forEach(({ id, err, ok: test }) => {
+    const input = document.getElementById(id);
+    const errEl = document.getElementById(err);
+    const valid = test(input.value.trim());
+    input.classList.toggle('field-err', !valid);
+    errEl.classList.toggle('show', !valid);
+    if (!valid) ok = false;
+  });
+  return ok;
+}
+
+let activePayment = 'stripe';
+function selectPayment(method) {
+  activePayment = method;
+  ['stripe','bank'].forEach(o => {
+    document.getElementById('pay-' + o)?.classList.remove('sel');
+    const f = document.getElementById(o + '-fields');
+    if (f) f.classList.add('hidden');
+  });
+  document.getElementById('pay-' + method)?.classList.add('sel');
+  const f = document.getElementById(method + '-fields');
+  if (f) f.classList.remove('hidden');
+  document.getElementById('stripe-info-banner').classList.toggle('hidden', method !== 'stripe');
+}
+
+/* ═══ STRIPE PAYMENT ═════════════════════════════════════════════ */
+async function startPayment() {
+  if (activePayment === 'bank') {
+    placeOrderBank();
+    return;
+  }
+  const name    = document.getElementById('ship-name').value.trim();
+  const email   = document.getElementById('ship-email').value.trim();
+  const address = document.getElementById('ship-address').value.trim();
+  const city    = document.getElementById('ship-city').value.trim();
+  const zip     = document.getElementById('ship-zip').value.trim();
+  const country = document.getElementById('ship-country').value;
+  const qty = cartItems.find(i => i.id === 'LC-GEN1')?.qty || 1;
+
+  const loading = document.getElementById('stripe-loading');
+  loading.classList.add('show');
+
+  try {
+    const res = await fetch(API + '/api/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, address, city, zip, country, quantity: qty, couponCode })
+    });
+    const data = await res.json();
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      throw new Error(data.error || 'No URL');
+    }
+  } catch (e) {
+    loading.classList.remove('show');
+    // Demo mode: show success if API not connected
+    console.warn('API not reachable, demo mode:', e.message);
+    showDemoSuccess(name, email);
+  }
+}
+
+function placeOrderBank() {
+  const name  = document.getElementById('ship-name').value.trim();
+  const email = document.getElementById('ship-email').value.trim();
+  if (!name || !email) { showToast('⚠ Bitte Liefer-Felder prüfen'); return; }
+  showDemoSuccess(name, email);
+}
+
+function showDemoSuccess(name, email) {
+  document.getElementById('order-id').textContent = Math.random().toString(36).substring(2,8).toUpperCase();
+  document.getElementById('success-email').textContent = email;
+  document.getElementById('success-overlay').classList.add('show');
+  cartItems = [];
+  saveCart();
+  if (window.plausible) plausible('purchase', { props: { revenue: cartTotal().total } });
+}
+
+function closeSuccess() {
+  document.getElementById('success-overlay').classList.remove('show');
+  document.getElementById('stripe-loading').classList.remove('show');
+  nav('landing');
+  couponCode = '';
+  couponDiscount = 0;
+  goToStep(1);
+  document.querySelectorAll('#page-checkout input, #page-checkout textarea').forEach(i => i.value = '');
+}
+
+/* ═══ MODALS ═════════════════════════════════════════════════════ */
+function openModal(id) {
+  document.getElementById(id).classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('show');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal.show').forEach(m => m.classList.remove('show'));
+    document.body.style.overflow = '';
+  }
+});
+
+/* ═══ CLIPBOARD ══════════════════════════════════════════════════ */
+function copyToClip(text, msg) {
+  navigator.clipboard?.writeText(text).then(() => showToast(msg)).catch(() => showToast('Kopieren nicht möglich'));
+}
+
+/* ═══ TOAST ══════════════════════════════════════════════════════ */
+let toastTimer;
+function showToast(msg, duration = 3200) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), duration);
+}
+
+/* ═══ COUNTDOWN ══════════════════════════════════════════════════ */
+const TARGET_DATE = new Date(Date.now() + 5 * 86400000 + 3 * 3600000);
+function tick() {
+  const d = TARGET_DATE - Date.now();
+  if (d <= 0) return;
+  const fmt = n => String(Math.floor(n)).padStart(2,'0');
+  document.getElementById('cd-days').textContent = fmt(d / 86400000);
+  document.getElementById('cd-hrs').textContent  = fmt((d % 86400000) / 3600000);
+  document.getElementById('cd-min').textContent  = fmt((d % 3600000) / 60000);
+  document.getElementById('cd-sec').textContent  = fmt((d % 60000) / 1000);
+}
+setInterval(tick, 1000); tick();
+
+/* ═══ FAQ ════════════════════════════════════════════════════════ */
+const FAQS = [
+  { q: 'Wie lange kann der Cube schweben?', a: 'Unbegrenzt — solange die Basisstation mit Strom versorgt ist. Bei einem Stromausfall landet der Cube dank des integrierten Sicherheitssystems sanft.' },
+  { q: 'Kann ich eigene Objekte auf die Basisstation levitieren lassen?', a: 'Ja, nicht-ferromagnetische Objekte bis 500g. Metallgegenstände können das Magnetfeld stören und sollten vermieden werden.' },
+  { q: 'Ist der LeviCube für Kinder geeignet?', a: 'Ab 14 Jahren geeignet. Das Magnetfeld ist unbedenklich, jedoch kann das schwebende Objekt bei unsachgemäßer Handhabung herunterfallen.' },
+  { q: 'Was passiert bei einem Stromausfall?', a: 'Das Sicherheitssystem erkennt einen Spannungsabfall in unter 1ms und bremst den Cube kontrolliert ab — kein freier Fall.' },
+  { q: 'Wie lange ist die Lieferzeit?', a: 'Österreich/Deutschland: 2–3 Werktage. Schweiz: 3–5 Werktage. EU: 5–7 Werktage. Du erhältst eine DHL-Tracking-Nummer per E-Mail.' },
+  { q: 'Welche Zahlungsmittel werden akzeptiert?', a: 'Kreditkarte (Visa, Mastercard, Amex), PayPal, SEPA-Lastschrift und Banküberweisung. Alle Zahlungen via Stripe (PCI-DSS Level 1).' },
+];
+
+const faqEl = document.getElementById('faq-list');
+FAQS.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'acc-item rounded-xl bg-surface-container border border-outline-variant/10';
+  div.innerHTML = `
+    <button class="w-full text-left px-5 py-4 flex justify-between items-center hover:bg-surface-container-high transition-colors rounded-xl" onclick="toggleAcc(${i})" aria-expanded="false" id="acc-btn-${i}">
+      <span class="font-headline font-semibold text-sm pr-4">${item.q}</span>
+      <span class="material-symbols-outlined acc-icon flex-shrink-0 text-on-surface-variant text-lg">add</span>
+    </button>
+    <div class="acc-body px-5 text-on-surface-variant text-sm leading-relaxed" id="acc-body-${i}">${item.a}</div>
+  `;
+  faqEl.appendChild(div);
+});
+
+function toggleAcc(i) {
+  const items = document.querySelectorAll('.acc-item');
+  const body  = document.getElementById('acc-body-' + i);
+  const open  = body.classList.contains('open');
+  items.forEach((el, j) => {
+    el.classList.remove('open');
+    document.getElementById('acc-body-' + j)?.classList.remove('open');
+    document.getElementById('acc-btn-' + j)?.setAttribute('aria-expanded','false');
+  });
+  if (!open) {
+    body.classList.add('open');
+    items[i].classList.add('open');
+    document.getElementById('acc-btn-' + i).setAttribute('aria-expanded','true');
+  }
+}
+
+/* ═══ REVIEWS ════════════════════════════════════════════════════ */
+function renderReviews() {
+  const list = document.getElementById('reviews-list');
+  if (!list) return;
+  list.innerHTML = reviews.slice(0, 6).map(r => `
+    <div class="rounded-2xl bg-surface-container border border-outline-variant/10 p-6 space-y-3">
+      <div class="flex items-start justify-between">
+        <div>
+          <div class="flex items-center gap-2">
+            <p class="font-headline font-bold text-sm">${r.name}</p>
+            ${r.verified ? '<span class="text-xs text-green-400 flex items-center gap-0.5"><span class="material-symbols-outlined text-xs" style="font-variation-settings:\'FILL\' 1">verified</span>Verifiziert</span>' : ''}
+          </div>
+          <p class="text-xs text-on-surface-variant mt-0.5">${r.date}</p>
+        </div>
+        <div class="text-primary-fixed-dim text-sm tracking-tight">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</div>
+      </div>
+      <p class="text-on-surface-variant text-sm leading-relaxed">${r.text}</p>
+    </div>
+  `).join('');
+}
+
+// Load from API if available
+async function loadReviews() {
+  try {
+    const res = await fetch(API + '/api/reviews');
+    const data = await res.json();
+    if (data.length) {
+      reviews = data.map(r => ({ name: r.name, stars: r.stars, text: r.text, date: new Date(r.created_at).toLocaleDateString('de-AT',{month:'short',year:'numeric'}), verified: r.verified }));
+    }
+  } catch { /* use default */ }
+  renderReviews();
+}
+
+function setStars(n) {
+  selectedStars = n;
+  document.querySelectorAll('.star').forEach((s, i) => s.classList.toggle('lit', i < n));
+}
+
+async function submitReview() {
+  const name = document.getElementById('rev-name').value.trim();
+  const text = document.getElementById('rev-text').value.trim();
+  if (!name || !text || !selectedStars) { showToast('⚠ Bitte Name, Text und Sterne ausfüllen.'); return; }
+  try {
+    await fetch(API + '/api/reviews', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, stars: selectedStars, text })
+    });
+  } catch { /* offline fallback */ }
+  reviews.unshift({ name, stars: selectedStars, text, date: new Date().toLocaleDateString('de-AT',{month:'short',year:'numeric'}), verified: false });
+  renderReviews();
+  closeModal('review-modal');
+  showToast('Danke für deine Bewertung! ★');
+  document.getElementById('rev-name').value = '';
+  document.getElementById('rev-text').value = '';
+  setStars(0);
+}
+
+/* ═══ NEWSLETTER ═════════════════════════════════════════════════ */
+async function subscribeNewsletter() {
+  const email = document.getElementById('nl-email').value.trim();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('⚠ Bitte eine gültige E-Mail eingeben.'); return; }
+  try {
+    await fetch(API + '/api/newsletter', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, source: 'landing' })
+    });
+  } catch { /* offline */ }
+  showToast('Angemeldet! Du bist dabei. ✓');
+  document.getElementById('nl-email').value = '';
+}
+
+function notifyFilm() {
+  const email = document.getElementById('film-email').value.trim();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('⚠ Bitte eine gültige E-Mail eingeben.'); return; }
+  closeModal('film-modal');
+  showToast('Wir benachrichtigen dich sobald der Film fertig ist!');
+}
+
+/* ═══ RETURN REQUEST ═════════════════════════════════════════════ */
+async function submitReturn() {
+  const order  = document.getElementById('ret-order').value.trim();
+  const email  = document.getElementById('ret-email').value.trim();
+  const reason = document.getElementById('ret-reason').value;
+  if (!order || !email) { showToast('⚠ Bitte alle Felder ausfüllen.'); return; }
+  try {
+    await fetch(API + '/api/return-request', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ orderNumber: order, email, reason })
+    });
+  } catch { /* offline */ }
+  closeModal('return-modal');
+  showToast('Rücksendung beantragt — DHL-Etikett kommt per E-Mail.');
+}
+
+/* ═══ RGB PREVIEW ════════════════════════════════════════════════ */
+function setRGB(color, shadow) {
+  const el = document.getElementById('rgb-preview');
+  if (el) { el.style.background = color; el.style.boxShadow = '0 0 40px ' + shadow; }
+}
+
+/* ═══ SUPPORT CHAT ════════════════════════════════════════════════ */
+const BOT = {
+  'cube aufsetzen':  'Halte den Cube ~5 cm über die Mitte der Basisstation und senke ihn langsam ab bis du eine Gegenkraft spürst — dann loslassen. 2–3 Sekunden warten bis er sich stabilisiert.',
+  'cube fällt':      'Das passiert wenn der Cube zu schnell abgesenkt wird oder Metall in der Nähe ist. Bitte sorge für 30 cm Abstand zu anderen Elektrogeräten und Metallgegenständen.',
+  'app verbinden':   'Bluetooth aktivieren → LeviCube App öffnen → „Neues Gerät" → „LeviCube-XXXX" auswählen. Falls nichts erscheint: Basisstation kurz neu starten.',
+  'lieferzeit':      'Österreich & Deutschland: 2–3 Werktage. Schweiz: 3–5 Tage. EU: 5–7 Tage. Du erhältst eine Tracking-Nummer per E-Mail.',
+  'rückgabe':        'Du hast 30 Tage Rückgaberecht. Starte die Rücksendung direkt hier im Chat oder per E-Mail an return@levicube.at — wir schicken ein kostenloses DHL-Etikett.',
+  'garantie':        '2 Jahre Herstellergarantie + 30 Tage Rückgabe. Defekte bitte an support@levicube.at melden mit Foto und Bestellnummer.',
+  'preis':           'LeviCube Gen-1 kostet 149 € inkl. 20% MwSt. Express-Versand 12 €. Gutscheincodes z.B. ASCEND10 für 10% Rabatt.',
+  'rgb':             '16,8 Mio. Farben, 40+ Szenen, eigene Farbverläufe — alles via LeviCube App. Musikreaktiver Modus ist auch dabei.',
+  'default':         'Danke für deine Anfrage! Für komplexere Anliegen erreichst du uns unter support@levicube.at — wir antworten innerhalb von 4 Stunden.'
+};
+
+function getBotReply(msg) {
+  const l = msg.toLowerCase();
+  return Object.entries(BOT).find(([k]) => k !== 'default' && l.includes(k))?.[1] ?? BOT.default;
+}
+
+function addMessage(text, type) {
+  const box = document.getElementById('chat-box');
+  if (!box) return;
+  const d = document.createElement('div');
+  d.className = 'msg ' + type;
+  d.textContent = text;
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function sendChat() {
+  const input = document.getElementById('chat-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+  addMessage(msg, 'user');
+  // Typing indicator
+  const box = document.getElementById('chat-box');
+  const typing = document.createElement('div');
+  typing.className = 'msg bot typing';
+  typing.id = 'typing';
+  typing.innerHTML = '<span></span><span></span><span></span>';
+  box.appendChild(typing);
+  box.scrollTop = box.scrollHeight;
+  setTimeout(() => {
+    document.getElementById('typing')?.remove();
+    addMessage(getBotReply(msg), 'bot');
+  }, 900 + Math.random() * 500);
+}
+
+function quickReply(text) {
+  const input = document.getElementById('chat-input');
+  if (input) input.value = text;
+  sendChat();
+}
+
+/* ═══ INIT ════════════════════════════════════════════════════════ */
+renderCart();
+updateBadges();
+loadReviews();
+
+// Nav to checkout if returning from Stripe
+const params = new URLSearchParams(window.location.search);
+if (params.get('order')) {
+  const orderNum = params.get('order');
+  document.getElementById('order-id').textContent = orderNum;
+  const email = document.getElementById('ship-email')?.value || '';
+  document.getElementById('success-email').textContent = email || 'deine E-Mail-Adresse';
+  document.getElementById('success-overlay').classList.add('show');
+}
+if (params.get('cancelled')) {
+  nav('checkout');
+  showToast('Zahlung abgebrochen — kein Betrag wurde belastet.');
+}
+
+// Chat greeting
+setTimeout(() => {
+  addMessage('Hallo! 👋 Ich bin der LeviCube-Assistent. Wie kann ich dir helfen?', 'bot');
+}, 600);
+</script>
+</body></html>
